@@ -5,49 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrej Spinej</title>
 
+    <!-- Favicons -->
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="/src/styles/fonts/stylesheet.css">
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="/src/styles/bootstrap/bootstrap.css">
+    
+    <!-- Template Main CSS File -->
     <link rel="stylesheet" href="/src/styles/normalize.css">
     <link rel="stylesheet" href="/src/styles/style.css">
+
+
+    <script src="/src/js/bootstrap/bootstrap.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
+
 <body>
-    <header>
-        <a href="#"></a>
-        <button>RU</button>
-        <button>EN</button>
-        <button>Dark/White</button>
-        <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Project</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article class="preview">
-            <div class="preview__title"></div>
-            <div class="preview__img"></div>
-        </article>
-    </main>
-    <footer>
-        <div>
-            <a href="#">
-                <img src="" alt="logo">
-            </a>
-            <div class="footer__contacts">
-                <a href="#">+ 7 909 876 37 97</a>
-                <a href="#">enjoyhillol@gmail.com</a>
-            </div>
-            <div class="footer__social-links">
-                <ul>
-                    <li>
-                        <a href="#"></a>
-                    </li>
+
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                <a href="#" class="p-0 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <img src="/src/img/SA.png" alt="logo" width="60px">
+                </a>
+
+                <div class="col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <button type="button" class="btn btn-outline-light me-2">RU</button>
+                    <button type="button" class="btn btn-outline-light me-2">EN</button>
+                    <button type="button" class="btn btn-warning">Theme</button>
+                </div>    
+
+                <ul class="nav text-end">
+                <li><a href="#" class="nav-link px-2 text-secondary"><span class="header-nav__links">0.1</span>Обо мне</a></li>
+                <li><a href="#" class="nav-link px-2 text-white"><span class="header-nav__links">0.2</span>Проекты</a></li>
+                <li><a href="#" class="nav-link px-2 text-white"><span class="header-nav__links">0.3</span>Опыт</a></li>
+                <li><a href="#" class="nav-link px-2 text-white"><span class="header-nav__links">0.4</span>Контакты</a></li>
                 </ul>
+    
             </div>
         </div>
-        
+    </header>
 
-    </footer>
+    <main>
+        <article class="hero">
+            <div class="container hero__container padding__container">
+                <h1 class="hero__title">Привет, меня зовут</h1>
+                <h2 class="hero__name">Спиней Андрей</h2>
+                <span class="hero__descr" id="element"></span>
+                <p class="hero__about">Я фронтенд разработчик, специализируюсь на создании (иногда в проектировании) цифровых технологий. В настоящее время я сосредоточен на создании доступных, ориентированных на человека решений и продуктов.</p>
+            </div>
+        </article>
+
+        <section class="about">
+            <div class="container padding__container">
+                <div class="about__title">
+
+                    <h2 class="about__us margin__text">Обо мне</h2>
+                    <div class="row col about__container">
+                        <div class="about__block col">
+                            <div class="block__info">
+                                <p>Привет! Меня зовут Андрей, и мне нравится создавать вещи, которые живут в Интернете. Мой интерес к веб-разработке начался еще в 2019 году, когда я решил попробовать создать сайт. И оказывается, создание даже пользовательской кнопки научило меня многому в HTML и CSS!</p>
+                                <p>Перенесемся в сегодняшний день: мне посчастливилось работать в рекламном агентстве, небольшой компании по продаже товаров со своим сайтом где я был Frontend разработчиком. В настоящее время я сосредоточен на создании доступных, инклюзивных продуктов для самых разных клиентов.</p>
+                                <p>Много времени я занимался продвижением сайтов в сети, знаю семантическую верстку, знаком с техническим SEO. Знаю как настроить и опубликовать проэкт на сервере.</p>
+                                <p>Я также продолжаю изучать новые технологии которые будут полезны мне в работе. Сейчас изучаю React, Node.JS, TypeScript.</p>
+                                <p>Вот несколько технологий, с которыми я работал в последнее время:</p>
+                            </div>
+                            <ul class="about__skills">
+                                <li class="about__list">JavaScript</li>
+                                <li class="about__list">React</li>
+                                <li class="about__list">Bootstrap</li>
+                                <li class="about__list">WordPress</li>
+                                <li class="about__list">Git</li>
+                                <li class="about__list">Bash</li>
+                            </ul>
+                        </div>
     
+                        <div class="about__photo col">
+                            <img class="photo__card" src="/src/img/my.jpg" alt="Spiney Andrey">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="container padding__container">
+                <div class="row row-col">
+                    <h2 class="skills__title margin__text">Skills</h2>
+                    <h3>Навыки, инструменты и технологии, в которых я разбираюсь:</h3>
+                    <div class="skills__icon">
+                        <img src="/src/img/tech/js.png" alt="JS">
+                        <img src="/src/img/tech/react.png" alt="React">
+                        <img src="/src/img/tech/php.png" alt="PHP">
+                        <img src="/src/img/tech/python.png" alt="Python">
+                        <img src="/src/img/tech/laravel.png" alt="Laravel">
+                        <img src="/src/img/tech/sql.png" alt="SQL">
+                        <img src="/src/img/tech/html.png" alt="HTML">
+                        <img src="/src/img/tech/css.png" alt="CSS">
+                        <img src="/src/img/tech/bootstap.png" alt="Bootstrap">
+                        <img src="/src/img/tech/wordpress.png" alt="WordPress">
+                        <img src="/src/img/tech/figma.png" alt="Figma">
+                        <img src="/src/img/tech/git.png" alt="Git">
+                        <img src="/src/img/tech/npm.png" alt="NPM">
+                        <img src="/src/img/tech/bash.png" alt="Bash">
+                        <img src="/src/img/tech/linux.png" alt="Linux">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="jobs">
+            <div class="container padding__container">
+                <h2 class="margin__text">Проекты</h2>
+                <div class="jobs__title">
+                    <h4>Несколько проектов сделанные мной</h4>
+                </div>
+
+                <div class="jobs__content row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Название карточки</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Подзаголовок карты</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Название карточки</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Подзаголовок карты</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Название карточки</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Подзаголовок карты</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                <button class="jobs__btn">Посмотреть GitHub...</button>
+
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="container padding__container">
+                <h2 class="margin__text">Опыт работы</h2>
+                <div class="work__title">
+                    <h4>Краткая информация из моего последнего опыта</h4>
+                </div>
+                <div class="work__content">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted footer__text">&copy; 2024 Дизайн спроектирован в Figma, код написан в Visual Studio Code. Созданно с помощью JS, HTML, CSS, Bootstrap. Собранно с помощью Webpack.</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><img src="/src/img/social/linkedin.svg" alt="linkedin_social"></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><img src="/src/img/social/telegram.svg" alt="telegram_social"></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><img src="/src/img/social/whatsapp.svg" alt="whatsapp_social"></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><img src="/src/img/social/phone-fill.svg" alt="phone_social"></a></li>
+        </ul>
+    </footer>
+    </div>      
+    <script src="/src/js/main.js"></script>
 </body>
 </html>

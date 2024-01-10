@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Hack';
+    src: url('Hack-Italic.eot');
+    src: local('Hack Italic'), local('Hack-Italic'),
+        url('Hack-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Hack-Italic.woff2') format('woff2'),
+        url('Hack-Italic.woff') format('woff'),
+        url('Hack-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Hack';
+    src: url('Hack-Bold.eot');
+    src: local('Hack Bold'), local('Hack-Bold'),
+        url('Hack-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Hack-Bold.woff2') format('woff2'),
+        url('Hack-Bold.woff') format('woff'),
+        url('Hack-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hack';
+    src: url('Hack-BoldItalic.eot');
+    src: local('Hack Bold Italic'), local('Hack-BoldItalic'),
+        url('Hack-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Hack-BoldItalic.woff2') format('woff2'),
+        url('Hack-BoldItalic.woff') format('woff'),
+        url('Hack-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Hack';
+    src: url('Hack-Regular.eot');
+    src: local('Hack Regular'), local('Hack-Regular'),
+        url('Hack-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Hack-Regular.woff2') format('woff2'),
+        url('Hack-Regular.woff') format('woff'),
+        url('Hack-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

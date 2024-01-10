@@ -1,0 +1,134 @@
+body {
+    background-color: #272727;
+    color: #D5D5D5;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #00C26A;
+    font-family: Hack;
+}
+
+.header-nav__links {
+    margin-right: 4px;
+    color: #00C26A;
+}
+
+.margin__text {
+    margin-bottom: 70px;
+}
+
+.padding__container {
+    margin-top: 130px;
+    padding: 0 150px 0 150px;
+}
+
+.hero__container {
+    margin-top: 237px;
+}
+
+.hero__title {
+    font-size: 22px;
+}
+
+.hero__descr, .hero__name {
+    font-size: 40px;
+    color: #D5D5D5;
+}
+
+.hero__descr {
+    color: #FFC107;
+}
+
+.hero__about {
+    font-size: 20px;
+    width: 670px;
+    margin-top: 30px;
+}
+
+.about {
+    margin-top: 400px;
+}
+
+.about__skills {
+    list-style: none;
+    column-count: 3;
+    height: 70px;
+}
+
+.about__list::before {
+    content: '▹';
+    color: #64ff7e;
+    line-height: 12px;
+    margin-right: 5px;
+}
+
+.photo__card {
+    width: 380px;
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: 10px 10px 50px black;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.about__photo::after {
+    content: '';
+    position: relative;
+    display: block;
+    bottom: 430px;
+    left: 30px;
+    width: 380px;
+    height: 452px;
+    z-index: -1;
+    border-radius: 10px;
+    border: #64ff7e 2px solid;
+    box-shadow: 10px 5px 25px black;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.about__container {
+    height: 530px;
+}
+
+
+.about__us::before {
+    content: "01. ";
+    font-size: 22px;
+    color: #64ff7e;
+}
+
+.about__us::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 200px;
+    top: -20px;
+    width: 290px;
+    height: 1px;
+    background-color: #64ff7e;
+}
+
+.about {
+    margin-bottom: 300px;
+}
+
+.skills__title::before {
+    content: "02. ";
+    font-size: 22px;
+    color: #64ff7e;
+}
+
+.skills__title::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 200px;
+    top: -20px;
+    width: 290px;
+    height: 1px;
+    background-color: #64ff7e;
+}
+
+.footer__text {
+    font-size: 10px;
+}
+
+
