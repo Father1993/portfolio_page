@@ -110,6 +110,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 300px;
 }
 
+
 .skills__title::before {
     content: "02. ";
     font-size: 22px;
@@ -125,6 +126,38 @@ h1, h2, h3, h4, h5, h6 {
     width: 290px;
     height: 1px;
     background-color: #64ff7e;
+}
+
+.skills__icon {
+    width: 65px;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.skills__list {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    width: 707px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.skills__list > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .3s;
+}
+
+.skills__list > li:hover {
+    transform: scale(1.2)
+}
+
+.skills__block {
+    padding: 0;
+    margin: 0;
 }
 
 .footer__text {
