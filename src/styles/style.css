@@ -247,12 +247,78 @@ h6 {
 }
 
 .jobs__btn {
-    width: 170px;
-    margin: 0 auto;
+    width: 270px;
     background-color: #ffc107;
 }
 
 .jobs__btn a {
     text-decoration: none;
     color: black;
+}
+
+.card-body {
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.project__img {
+    width: 100%;
+    border-radius: 15px;
+    height: 200px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.jobs__card {
+    border-radius: 15px;
+    background-color: transparent;
+    border: 0.1px solid rgba(138, 138, 138, 0.5);
+}
+
+.jobs__content {
+    margin-bottom: 50px;
+}
+
+.card__wrapper {
+    padding: 12px;
+}
+
+.project__link {
+    padding: 0 15px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.project__link-preview,
+.project__link-code {
+    text-decoration: none;
+    color: #d5d5d5;
+}
+
+.project__link-preview::before {
+    content: '';
+    display: block;
+    background-image: url('../img/social/link.svg');
+    width: 26px;
+    height: 26px;
+    margin-right: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project__link-code::before {
+    content: '';
+    display: block;
+    background-image: url('../img/social/github.svg');
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

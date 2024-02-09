@@ -141,50 +141,65 @@
                 <h2 class="jobs__title margin__text">Проекты</h2>
 
                 <div class="jobs__descr">
-                    <h4>Несколько проектов сделанные мной</h4>
+                    <h4 class="text-center m-5">Последние три проекта</h4>
                 </div>
 
-                <div class="jobs__content row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="jobs__content row row-cols-1 row-cols-md-1 row-cols-lg-3">
+
                     <div class="col">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card jobs__card">
                             <div class="card-body">
-                                <h5 class="card-title">Vanilla JS game</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Игра на тренировку памяти</h6>
-                                <p class="card-text">Написана на чистом JavaScript</p>
-                                <a href="https://65c60a3cd060d29373d059d2--fascinating-quokka-0f8f87.netlify.app/" target="_blank" class="card-link">Live Preview</a>
-                                <a href="https://github.com/Father1993/MemoryGameJS/tree/main" target="_blank" class="card-link">View Code</a>
+                                <img class="project__img" src="./src/img/project/xinros_preview.jpg" alt="xinroshh-site">
+                                <div class="card__wrapper">
+                                    <h5 class="card-title">Xinrosh</h5>
+                                    <p class="card-text">Landing page компании по параллельному импорту запчастей на спецтехнику в РФ.</p>
+                                </div>
+                                <div class="project__link">
+                                    <a class="project__link-preview d-flex" href="#" target="_blank" class="card-link">Live Preview</a>
+                                    <a class="project__link-code d-flex" href="#" target="_blank" class="card-link">View Code</a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card jobs__card">
                             <div class="card-body">
-                                <h5 class="card-title">Xinroshh</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Сайт для компании</h6>
-                                <p class="card-text">Сайт компании по параллельному импорту запчастей на спецтехнику в РФ.</p>
-                                <a href="#" target="_blank" class="card-link">Live Preview</a>
-                                <a href="#" target="_blank" class="card-link">View Code</a>
+                                <img class="project__img" src="./src/img/project/beats_preview.jpeg" alt="beats_studio">
+                                <div class="card__wrapper">
+                                    <h5 class="card-title">Beats Studio Buds</h5>
+                                    <p class="card-text">Фриланс проект: страничка для наушников Beats Studio</p>
+                                </div>
+                                <div class="project__link">
+                                    <a class="project__link-preview d-flex" href="https://symphonious-crumble-38f551.netlify.app/" target="_blank" class="card-link">Live Preview</a>
+                                    <a class="project__link-code d-flex" href="https://github.com/Father1993/Beats-Studio-Buds-" target="_blank" class="card-link">View Code</a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">Beats Studio Buds</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Landing page</h6>
-                                <p class="card-text">Фриланс проект: рекламная страничка для наушников Beats Studio</p>
-                                <a href="https://symphonious-crumble-38f551.netlify.app/" target="_blank" class="card-link">Live Preview</a>
-                                <a href="https://github.com/Father1993/Beats-Studio-Buds-" target="_blank" class="card-link">View Code</a>
+                        <div class="card jobs__card">
+                            <div class="card-body d-flex flex-column">
+                                <img class="project__img" src="./src/img/project/vanilla_js_preview.jpeg" alt="memories-game">
+                                <div class="card__wrapper">
+                                    <h5 class="card-title">Vanilla JS game</h5>
+                                    <p class="card-text">Написана на чистом JavaScript. Практика eventLoop, setTimeout() + анимация на СSS</p>
+                                </div>
+                                <div class="project__link">
+                                    <a class="project__link-preview d-flex" href="https://65c60a3cd060d29373d059d2--fascinating-quokka-0f8f87.netlify.app/" target="_blank" class="card-link">Live Preview</a>
+                                    <a class="project__link-code d-flex" href="https://github.com/Father1993/MemoryGameJS/tree/main" target="_blank" class="card-link">View Code</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
+            </div>
+            <div class="jobs__github text-center">
                 <button class="jobs__btn btn btn-success"> 
                     <a class="jobs__link" href="https://github.com/Father1993" target="_blank">Профиль GitHub</a>
                 </button>
             </div>
+            
         </section>
 
         <section class="work">
