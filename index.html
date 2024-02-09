@@ -23,248 +23,255 @@
 
     <script src="/src/js/bootstrap/bootstrap.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'></script>
+    
+    
 </head>
 
-<body>
-
-    <header class="p-3 bg-dark text-white">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-
-                <a href="#" class="p-0 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                <img src="/src/img/SA.png" alt="logo" width="60px">
-                </a>
-
-                <div class="col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <button type="button" class="btn btn-outline-light me-2">RU</button>
-                    <button type="button" class="btn btn-outline-light me-2">EN</button>
-                    <button type="button" class="btn btn-warning">Theme</button>
-                </div>    
-
-                <ul class="nav text-end">
-                    <li><a href="#" class="nav-link px-2 text-secondary">Обо мне</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Проекты</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Опыт</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Контакты</a></li>
-                </ul>
+<body id="playpen">
+    <div class="header-b">
+        <header class=" p-3 text-white">
+            <div class="container">
+                <div class="header d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
     
+                    <a href="#" class="p-0 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="/src/img/SA.png" alt="logo" width="60px">
+                    </a>
+    
+                    <div class="col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <button type="button" class="btn btn-outline-light me-2">RU</button>
+                        <button type="button" class="btn btn-outline-light me-2">EN</button>
+                        <button type="button" class="btn btn-warning">Theme</button>
+                    </div>    
+    
+                    <ul class="nav text-end">
+                        <li><a href="#" class="header__nav-link nav-link px-2 text-secondary">Обо мне</a></li>
+                        <li><a href="#" class="header__nav-link nav-link px-2 text-white">Проекты</a></li>
+                        <li><a href="#" class="header__nav-link nav-link px-2 text-white">Опыт</a></li>
+                        <li><a href="#" class="header__nav-link nav-link px-2 text-white">Контакты</a></li>
+                    </ul>
+        
+                </div>
             </div>
-        </div>
-    </header>
-
-    <main>
-        <article class="hero">
-            <div class="container hero__container padding__container">
-                <h1 class="hero__title">Привет, меня зовут</h1>
-                <h2 class="hero__name">Спиней Андрей</h2>
-                <span class="hero__descr" id="element"></span>
-                <p class="hero__about">Я frontend разработчик, специализируюсь на создании цифровых технологий. В настоящее время я сосредоточен на создании доступных, ориентированных на человека решений и продуктов.</p>
-            </div>
-        </article>
-
-        <section class="about">
-            <div class="container padding__container">
-                <div class="about__title">
-
-                    <h2 class="about__us margin__text">Обо мне</h2>
-                    <div class="row col about__container">
-                        <div class="about__block col">
-                            <div class="block__info">
-                                <p>Мне нравится создавать вещи, которые живут в интернете. Мой интерес к веб-разработке начался еще в 2020 году, когда я решил попробовать создать сайт. И оказывается, создание даже пользовательской кнопки научило меня многому в HTML и CSS!</p>
-                                <p>Перенесемся в сегодняшний день: мне посчастливилось работать в рекламном агентстве, небольшой компании по продаже товаров со своим сайтом где я был Frontend разработчиком. В настоящее время я сосредоточен на создании доступных, инклюзивных продуктов для самых разных клиентов.</p>
-                                <p>Много времени я занимался продвижением сайтов в сети, знаю семантическую верстку, знаком с техническим SEO. Знаю как настроить и опубликовать проект на сервере.</p>
-                                <p>Я также продолжаю изучать новые технологии которые будут полезны мне в работе. Сейчас изучаю React, Node.js, TypeScript.</p>
-                                <p>Вот несколько технологий, с которыми я работал в последнее время:</p>
+        </header>
+    
+        <main>
+            <article class="hero">
+                <div class="container hero__container padding__container">
+                    <h1 class="hero__title">Привет, меня зовут</h1>
+                    <h2 class="hero__name">Спиней Андрей</h2>
+                    <span class="hero__descr" id="element"></span>
+                    <p class="hero__about">Я frontend разработчик, специализируюсь на создании цифровых технологий. В настоящее время я сосредоточен на создании доступных, ориентированных на человека решений и продуктов.</p>
+                </div>
+            </article>
+    
+            <section class="about">
+                <div class="container padding__container">
+                    <div class="about__title">
+    
+                        <h2 class="about__us margin__text">Обо мне</h2>
+                        <div class="row col about__container">
+                            <div class="about__block col">
+                                <div class="block__info">
+                                    <p>Мне нравится создавать вещи, которые живут в интернете. Мой интерес к веб-разработке начался еще в 2020 году, когда я решил попробовать создать сайт. И оказывается, создание даже пользовательской кнопки научило меня многому в HTML и CSS!</p>
+                                    <p>Перенесемся в сегодняшний день: мне посчастливилось работать в рекламном агентстве, небольшой компании по продаже товаров со своим сайтом где я был Frontend разработчиком. В настоящее время я сосредоточен на создании доступных, инклюзивных продуктов для самых разных клиентов.</p>
+                                    <p>Много времени я занимался продвижением сайтов в сети, знаю семантическую верстку, знаком с техническим SEO. Знаю как настроить и опубликовать проект на сервере.</p>
+                                    <p>Я также продолжаю изучать новые технологии которые будут полезны мне в работе. Сейчас изучаю React, Node.js, TypeScript.</p>
+                                    <p>Вот несколько технологий, с которыми я работал в последнее время:</p>
+                                </div>
+                                <ul class="about__skills">
+                                    <li class="about__list">JavaScript</li>
+                                    <li class="about__list">React</li>
+                                    <li class="about__list">NodeJS</li>
+                                    <li class="about__list">Express</li>
+                                    <li class="about__list">Git</li>
+                                    <li class="about__list">Docker</li>
+                                </ul>
                             </div>
-                            <ul class="about__skills">
-                                <li class="about__list">JavaScript</li>
-                                <li class="about__list">React</li>
-                                <li class="about__list">NodeJS</li>
-                                <li class="about__list">Express</li>
-                                <li class="about__list">Git</li>
-                                <li class="about__list">Docker</li>
+        
+                            <div class="about__photo col">
+                                <img 
+                                    class="photo__card"
+                                    src="/src/img/my-1280.webp"
+                                    srcset="
+                                    /src/img/my-480.webp 480w,
+                                    /src/img/my-768.webp 768w,
+                                    /src/img/my-1280.webp 1280w
+                                "
+                                    sizes="(max-width: 480px) 480px,
+                                            (max-width: 768px) 768px,
+                                            1280px"
+                                    alt="Spiney Andrey">
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="skills">
+                <div class="container padding__container">
+                    <div class="row">
+    
+                        <h2 class="skills__title margin__text">Skills</h2>
+                        <h3>Навыки, инструменты и технологии, в которых я разбираюсь:</h3>
+                        <div class="skills__block">
+    
+                            <ul class="skills__list">
+                                <li><img class="skills__icon" src="/src/img/tech/js.png" alt="JS_icon">JavaScript</li>
+                                <li><img class="skills__icon" src="/src/img/tech/react.png" alt="React_icon">React</li>
+                                <li><img class="skills__icon" src="/src/img/tech/node.png" alt="Node_icon">Node.js</li>
+                                <li><img class="skills__icon" src="/src/img/tech/docker.png" alt="Docker_icon">Docker</li>
+                                <li><img class="skills__icon" src="/src/img/tech/html.png" alt="HTML_icon">HTML</li>
+                                <li><img class="skills__icon" src="/src/img/tech/css.png" alt="CSS_icon">CSS</li>
+                                <li><img class="skills__icon" src="/src/img/tech/php.png" alt="PHP_icon">PHP</li>
+                                <li><img class="skills__icon" src="/src/img/tech/python.png" alt="Python_icon">Python</li>
+                                <li><img class="skills__icon" src="/src/img/tech/sql.png" alt="SQL_icon">SQL</li>
+                                <li><img class="skills__icon" src="/src/img/tech/bootstap.png" alt="Bootstrap_icon">Bootstrap</li>
+                                <li><img class="skills__icon" src="/src/img/tech/wordpress.png" alt="WordPress_icon">WordPress</li>
+                                <li><img class="skills__icon" src="/src/img/tech/git.png" alt="Git_icon">Git</li>
+                                <li><img class="skills__icon" src="/src/img/tech/npm.png" alt="NPM_icon">npm</li>
+                                <li><img class="skills__icon" src="/src/img/tech/bash.png" alt="Bash_icon">bash</li>
+                                <li><img class="skills__icon" src="/src/img/tech/linux.png" alt="Linux_icon">Linux</li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </section>
     
-                        <div class="about__photo col">
-                            <img 
-                                class="photo__card"
-                                src="/src/img/my-1280.webp"
-                                srcset="
-                                /src/img/my-480.webp 480w,
-                                /src/img/my-768.webp 768w,
-                                /src/img/my-1280.webp 1280w
-                            "
-                                sizes="(max-width: 480px) 480px,
-                                        (max-width: 768px) 768px,
-                                        1280px"
-                                alt="Spiney Andrey">
-
-                        </div>
+            <section class="jobs">
+                <div class="container padding__container">
+                    <h2 class="jobs__title margin__text">Проекты</h2>
+    
+                    <div class="jobs__descr">
+                        <h4 class="text-center m-5">Последние три проекта</h4>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="skills">
-            <div class="container padding__container">
-                <div class="row">
-
-                    <h2 class="skills__title margin__text">Skills</h2>
-                    <h3>Навыки, инструменты и технологии, в которых я разбираюсь:</h3>
-                    <div class="skills__block">
-
-                        <ul class="skills__list">
-                            <li><img class="skills__icon" src="/src/img/tech/js.png" alt="JS_icon">JavaScript</li>
-                            <li><img class="skills__icon" src="/src/img/tech/react.png" alt="React_icon">React</li>
-                            <li><img class="skills__icon" src="/src/img/tech/node.png" alt="Node_icon">Node.js</li>
-                            <li><img class="skills__icon" src="/src/img/tech/docker.png" alt="Docker_icon">Docker</li>
-                            <li><img class="skills__icon" src="/src/img/tech/html.png" alt="HTML_icon">HTML</li>
-                            <li><img class="skills__icon" src="/src/img/tech/css.png" alt="CSS_icon">CSS</li>
-                            <li><img class="skills__icon" src="/src/img/tech/php.png" alt="PHP_icon">PHP</li>
-                            <li><img class="skills__icon" src="/src/img/tech/python.png" alt="Python_icon">Python</li>
-                            <li><img class="skills__icon" src="/src/img/tech/sql.png" alt="SQL_icon">SQL</li>
-                            <li><img class="skills__icon" src="/src/img/tech/bootstap.png" alt="Bootstrap_icon">Bootstrap</li>
-                            <li><img class="skills__icon" src="/src/img/tech/wordpress.png" alt="WordPress_icon">WordPress</li>
-                            <li><img class="skills__icon" src="/src/img/tech/git.png" alt="Git_icon">Git</li>
-                            <li><img class="skills__icon" src="/src/img/tech/npm.png" alt="NPM_icon">npm</li>
-                            <li><img class="skills__icon" src="/src/img/tech/bash.png" alt="Bash_icon">bash</li>
-                            <li><img class="skills__icon" src="/src/img/tech/linux.png" alt="Linux_icon">Linux</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="jobs">
-            <div class="container padding__container">
-                <h2 class="jobs__title margin__text">Проекты</h2>
-
-                <div class="jobs__descr">
-                    <h4 class="text-center m-5">Последние три проекта</h4>
-                </div>
-
-                <div class="jobs__content row row-cols-1 row-cols-md-1 row-cols-lg-3">
-
-                    <div class="col">
-                        <div class="card jobs__card">
-                            <div class="card-body">
-                                <img class="project__img" src="./src/img/project/xinros_preview.jpg" alt="xinroshh-site">
-                                <div class="card__wrapper">
-                                    <h5 class="card-title">Xinrosh</h5>
-                                    <p class="card-text">Landing page компании по параллельному импорту запчастей на спецтехнику в РФ.</p>
-                                </div>
-                                <div class="project__link">
-                                    <a class="project__link-preview d-flex" href="#" target="_blank" class="card-link">Live Preview</a>
-                                    <a class="project__link-code d-flex" href="#" target="_blank" class="card-link">View Code</a>
+    
+                    <div class="jobs__content row row-cols-1 row-cols-md-1 row-cols-lg-3">
+    
+                        <div class="col">
+                            <div class="card jobs__card">
+                                <div class="card-body">
+                                    <img class="project__img" src="./src/img/project/xinros_preview.jpg" alt="xinroshh-site">
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">Xinrosh</h5>
+                                        <p class="card-text">Landing page компании по параллельному импорту запчастей на спецтехнику в РФ.</p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a class="project__link-preview d-flex" href="#" target="_blank" class="card-link">Live Preview</a>
+                                        <a class="project__link-code d-flex" href="#" target="_blank" class="card-link">View Code</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card jobs__card">
-                            <div class="card-body">
-                                <img class="project__img" src="./src/img/project/beats_preview.jpeg" alt="beats_studio">
-                                <div class="card__wrapper">
-                                    <h5 class="card-title">Beats Studio Buds</h5>
-                                    <p class="card-text">Фриланс проект: страничка для наушников Beats Studio</p>
-                                </div>
-                                <div class="project__link">
-                                    <a class="project__link-preview d-flex" href="https://symphonious-crumble-38f551.netlify.app/" target="_blank" class="card-link">Live Preview</a>
-                                    <a class="project__link-code d-flex" href="https://github.com/Father1993/Beats-Studio-Buds-" target="_blank" class="card-link">View Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card jobs__card">
-                            <div class="card-body d-flex flex-column">
-                                <img class="project__img" src="./src/img/project/vanilla_js_preview.jpeg" alt="memories-game">
-                                <div class="card__wrapper">
-                                    <h5 class="card-title">Vanilla JS game</h5>
-                                    <p class="card-text">Написана на чистом JavaScript. Практика eventLoop, setTimeout() + анимация на СSS</p>
-                                </div>
-                                <div class="project__link">
-                                    <a class="project__link-preview d-flex" href="https://65c60a3cd060d29373d059d2--fascinating-quokka-0f8f87.netlify.app/" target="_blank" class="card-link">Live Preview</a>
-                                    <a class="project__link-code d-flex" href="https://github.com/Father1993/MemoryGameJS/tree/main" target="_blank" class="card-link">View Code</a>
+    
+                        <div class="col">
+                            <div class="card jobs__card">
+                                <div class="card-body">
+                                    <img class="project__img" src="./src/img/project/beats_preview.jpeg" alt="beats_studio">
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">Beats Studio Buds</h5>
+                                        <p class="card-text">Фриланс проект: страничка для наушников Beats Studio</p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a class="project__link-preview d-flex" href="https://symphonious-crumble-38f551.netlify.app/" target="_blank" class="card-link">Live Preview</a>
+                                        <a class="project__link-code d-flex" href="https://github.com/Father1993/Beats-Studio-Buds-" target="_blank" class="card-link">View Code</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+    
+                        <div class="col">
+                            <div class="card jobs__card">
+                                <div class="card-body d-flex flex-column">
+                                    <img class="project__img" src="./src/img/project/vanilla_js_preview.jpeg" alt="memories-game">
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">Vanilla JS game</h5>
+                                        <p class="card-text">Написана на чистом JavaScript. Практика eventLoop, setTimeout() + анимация на СSS</p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a class="project__link-preview d-flex" href="https://65c60a3cd060d29373d059d2--fascinating-quokka-0f8f87.netlify.app/" target="_blank" class="card-link">Live Preview</a>
+                                        <a class="project__link-code d-flex" href="https://github.com/Father1993/MemoryGameJS/tree/main" target="_blank" class="card-link">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="jobs__github text-center">
+                    <button class="jobs__btn btn btn-success"> 
+                        <a class="jobs__link" href="https://github.com/Father1993" target="_blank">Профиль GitHub</a>
+                    </button>
+                </div>
+                
+            </section>
+    
+            <section class="work">
+                <div class="container padding__container">
+    
+                    <h2 class="work__title margin__text">Опыт работы</h2>
+    
+                    <div class="work__desc">
+                        <h4>Краткая информация из моего последнего опыта</h4>
                     </div>
-            </div>
-            <div class="jobs__github text-center">
-                <button class="jobs__btn btn btn-success"> 
-                    <a class="jobs__link" href="https://github.com/Father1993" target="_blank">Профиль GitHub</a>
-                </button>
-            </div>
-            
-        </section>
-
-        <section class="work">
-            <div class="container padding__container">
-
-                <h2 class="work__title margin__text">Опыт работы</h2>
-
-                <div class="work__desc">
-                    <h4>Краткая информация из моего последнего опыта</h4>
+    
+                    <div class="work__content">
+                    </div>
+    
                 </div>
-
-                <div class="work__content">
+            </section>
+        </main>
+    
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+                    </a>
+                    <span class="mb-3 mb-md-0 text-muted footer__text">&copy; 2024 Дизайн спроектирован в Figma, код написан в Visual Studio Code. Создано с помощью JS, HTML, CSS, Bootstrap. Собранно Webpack.</span>
                 </div>
-
-            </div>
-        </section>
-    </main>
-
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-                </a>
-                <span class="mb-3 mb-md-0 text-muted footer__text">&copy; 2024 Дизайн спроектирован в Figma, код написан в Visual Studio Code. Создано с помощью JS, HTML, CSS, Bootstrap. Собранно Webpack.</span>
-            </div>
-
-            <div class="footer__contacts">
-                <ul class="footer__nav d-flex flex-column">
-                    <li class="ms-3">
-                        <a class="text-muted"target="_blank" href="https://t.me/Anri_khv">
-                            <img src="/src/img/social/telegram.svg" alt="telegram_social_icon">
-                        </a>
-                    </li>
-                    <li class="ms-3">
-                        <a class="text-muted"target="_blank" href="https://wa.me/79098763797">
-                            <img src="/src/img/social/whatsapp.svg" alt="whatsapp_social_icon">
-                        </a>
-                    </li>
-                    <li class="ms-3">
-                        <a class="text-muted" href="tel:+79098763797">
-                            <img src="/src/img/social/phone-fill.svg" alt="phone_social_icon">
-                        </a>
-                    </li>
-                    <li class="ms-3">
-                        <a class="text-muted" target="_blank" href="https://github.com/Father1993">
-                            <img src="/src/img/social/github.svg" alt="github_social_icon">
-                        </a>
-                    </li>
-                    <li class="ms-3">
-                        <a class="text-muted" target="_blank" href="https://www.linkedin.com/in/andrey-spiney/">
-                            <img src="/src/img/social/linkedin.svg" alt="linkedin_social_icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__email d-flex">
-                <a href="mailto:enjoyhillol@gmail.com">
-                    <p class="email__mail">enjoyhillol@gmail.com</p>
-                </a>
-            </div>
-        </footer>
+    
+                <div class="footer__contacts">
+                    <ul class="footer__nav d-flex flex-column">
+                        <li class="ms-3">
+                            <a class="text-muted"target="_blank" href="https://t.me/Anri_khv">
+                                <img src="/src/img/social/telegram.svg" alt="telegram_social_icon">
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-muted"target="_blank" href="https://wa.me/79098763797">
+                                <img src="/src/img/social/whatsapp.svg" alt="whatsapp_social_icon">
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-muted" href="tel:+79098763797">
+                                <img src="/src/img/social/phone-fill.svg" alt="phone_social_icon">
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-muted" target="_blank" href="https://github.com/Father1993">
+                                <img src="/src/img/social/github.svg" alt="github_social_icon">
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-muted" target="_blank" href="https://www.linkedin.com/in/andrey-spiney/">
+                                <img src="/src/img/social/linkedin.svg" alt="linkedin_social_icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer__email d-flex">
+                    <a href="mailto:enjoyhillol@gmail.com">
+                        <p class="email__mail">enjoyhillol@gmail.com</p>
+                    </a>
+                </div>
+            </footer>
+        </div>
     </div>
 
+   
+
     <script src="/src/js/main.js"></script>
+    <script src="./mouse_hover.js"></script>
 </body>
 </html>

@@ -6,15 +6,33 @@ h1,
 h2,
 h3,
 h4,
-h5,
 h6 {
     color: #00c26a;
     font-family: Hack;
 }
+.header-b {
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+}
+
+.header {
+    border: 1px solid red;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid rgba(138, 138, 138, 0.7);
+    border-radius: 15px;
+}
 
 .header-nav__links {
     margin-right: 4px;
-    color: #00c26a;
+}
+
+.header__nav-link {
+    color: #d5d5d5 !important;
+    text-shadow: 5px 5px 7px black;
+}
+
+.header__nav-link:hover {
+    color: #ffc107 !important;
 }
 
 .margin__text {
