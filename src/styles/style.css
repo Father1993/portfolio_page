@@ -1,15 +1,20 @@
 body {
     background-color: #272727;
-    color: #D5D5D5;
+    color: #d5d5d5;
 }
-h1, h2, h3, h4, h5, h6 {
-    color: #00C26A;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #00c26a;
     font-family: Hack;
 }
 
 .header-nav__links {
     margin-right: 4px;
-    color: #00C26A;
+    color: #00c26a;
 }
 
 .margin__text {
@@ -29,13 +34,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 22px;
 }
 
-.hero__descr, .hero__name {
+.hero__descr,
+.hero__name {
     font-size: 40px;
-    color: #D5D5D5;
+    color: #d5d5d5;
 }
 
 .hero__descr {
-    color: #FFC107;
+    color: #ffc107;
 }
 
 .hero__about {
@@ -88,18 +94,17 @@ h1, h2, h3, h4, h5, h6 {
     height: 530px;
 }
 
-
 .about__us::before {
-    content: "01. ";
+    content: '';
     font-size: 22px;
     color: #64ff7e;
 }
 
 .about__us::after {
-    content: "";
+    content: '';
     display: block;
     position: relative;
-    left: 200px;
+    left: 160px;
     top: -20px;
     width: 290px;
     height: 1px;
@@ -110,18 +115,17 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 300px;
 }
 
-
 .skills__title::before {
-    content: "02. ";
+    content: '';
     font-size: 22px;
     color: #64ff7e;
 }
 
 .skills__title::after {
-    content: "";
+    content: '';
     display: block;
     position: relative;
-    left: 200px;
+    left: 140px;
     top: -20px;
     width: 290px;
     height: 1px;
@@ -148,11 +152,11 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform .3s;
+    transition: transform 0.3s;
 }
 
 .skills__list > li:hover {
-    transform: scale(1.2)
+    transform: scale(1.2);
 }
 
 .skills__block {
@@ -164,4 +168,91 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 10px;
 }
 
+.footer__contacts {
+    position: fixed;
+    left: 55px;
+    bottom: 130px;
+}
 
+.footer__nav li {
+    list-style: none;
+}
+
+.footer__nav li:not(:first-child) {
+    margin-top: 20px;
+}
+
+.footer__nav::after {
+    content: '';
+    display: block;
+    position: fixed;
+    left: 0px;
+    bottom: 0;
+    width: 230px;
+    height: 1px;
+    rotate: 90deg;
+    background-color: #d5d5d5;
+}
+
+.footer__email {
+    position: fixed;
+    right: 10px;
+    bottom: 230px;
+}
+
+.footer__email a {
+    text-decoration: none;
+    color: #d5d5d5;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.email__mail {
+    rotate: 90deg;
+    text-decoration: none;
+}
+
+.footer__email::after {
+    rotate: 90deg;
+    content: '';
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: -8px;
+    width: 250px;
+    height: 1px;
+    background-color: #d5d5d5;
+}
+
+.jobs__title::after {
+    content: '';
+    display: block;
+    position: relative;
+    left: 160px;
+    top: -20px;
+    width: 270px;
+    height: 1px;
+    background-color: #64ff7e;
+}
+
+.work__title::after {
+    content: '';
+    display: block;
+    position: relative;
+    left: 240px;
+    top: -20px;
+    width: 170px;
+    height: 1px;
+    background-color: #64ff7e;
+}
+
+.jobs__btn {
+    width: 170px;
+    margin: 0 auto;
+    background-color: #ffc107;
+}
+
+.jobs__btn a {
+    text-decoration: none;
+    color: black;
+}
