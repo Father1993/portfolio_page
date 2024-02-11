@@ -18,6 +18,14 @@ a {
     font-family: 'Mixcoatl Mono', Courier, monospace;
 }
 
+*:focus {
+    border: none;
+    outline: 2px solid #64ff7e;
+    -webkit-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
+    -moz-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
+    box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
+}
+
 .header__btn {
     padding: 0;
     margin: 0;
@@ -25,13 +33,16 @@ a {
     text-decoration: none;
     color: #d5d5d5;
 }
+.rus {
+    margin-right: -7px;
+}
 
 .header__btn:hover {
     scale: 1.1;
 }
 
 .header-b {
-    background-image: url('../img/background.png');
+    background-image: url('../img/assets/background.png');
     background-repeat: no-repeat;
 }
 
@@ -47,17 +58,26 @@ a {
 }
 
 .header__nav-link {
-    color: #d5d5d5 !important;
+    font-family: 'TeXGyreCursor', Courier, monospace;
+    font-size: 22px;
+    color: whitesmoke !important;
     text-shadow: 5px 5px 7px black;
     font-weight: bold;
+    text-shadow: 1px 1px 2px black, 0 0 1em whitesmoke, 0 0 0.2em whitesmoke;
 }
 
 .header__nav-link:hover {
     color: #ffc107 !important;
 }
 
+.header__nav-link:hover:before {
+    content: '/';
+    position: relative;
+}
+
 .margin__text {
-    margin-bottom: 70px;
+    margin-bottom: 77px;
+    font-size: 2.1rem;
 }
 
 .padding__container {
@@ -174,6 +194,10 @@ a {
     color: #64ff7e;
 }
 
+.skills__description {
+    font-size: 1.5rem;
+}
+
 .skills__title::after {
     content: '';
     display: block;
@@ -270,7 +294,7 @@ a {
 }
 
 .email__mail {
-    rotate: 90deg;
+    margin-top: 15px;
     text-decoration: none;
 }
 
@@ -341,7 +365,7 @@ a {
 }
 
 .jobs__content {
-    margin-bottom: 50px;
+    margin-bottom: 77px;
 }
 
 .card__wrapper {
@@ -396,12 +420,49 @@ a {
     transition: opacity 0.5s ease-in-out;
 }
 
+.footer__link {
+    rotate: 90deg;
+}
+
 .fade-in {
     opacity: 1;
 }
 
 .work__desc {
+    margin-bottom: 50px;
+}
+
+.contact__section {
+    margin-top: 170px;
+}
+
+.contact__title {
     margin-bottom: 30px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.contact__descr {
+    width: 600px;
+    font-size: 20px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.contact__email {
+    height: 65px;
+    border: 1px solid #00c26a;
+    padding: 20px;
+    border-radius: 7px;
+    color: #00c26a;
+    text-decoration: none;
+    cursor: pointer;
+    width: 167px;
+    margin: auto;
+}
+
+.contact__email:hover {
+    color: #ffc107;
 }
 
 .accordion-item,
@@ -423,10 +484,14 @@ a {
     border-top-right-radius: 15px;
 }
 .accordion-button {
+    font-family: 'TeXGyreCursor', Courier, monospace;
     color: #d5d5d5;
     border: 1px solid #d5d5d5;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: transparent;
 }
 .accordion-body {
     color: #d5d5d5;
@@ -438,9 +503,16 @@ a {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
 .accordion-button:not(.collapsed) {
     border-bottom: none;
     color: #d5d5d5;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .accordion__skills button {
@@ -448,4 +520,38 @@ a {
     color: whitesmoke;
     border: 1px solid #d5d5d5;
     border-radius: 15px;
+}
+
+.accordion-button:focus {
+    border: none;
+    outline: 2px solid #64ff7e;
+    -webkit-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
+    -moz-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
+    box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
+    background: transparent;
+}
+
+.accordion-body button {
+    font-family: 'Mixcoatl Mono', Courier, monospace;
+    font-weight: 100;
+    font-size: 14px;
+    background-color: transparent;
+    color: #d5d5d5;
+    border: 1px solid #d5d5d5;
+    border-radius: 10px;
+}
+
+.btn:focus {
+    border: none;
+    outline: 2px solid #64ff7e;
+    -webkit-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
+    -moz-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
+    box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
+}
+
+.accordion-button::after {
+    background-image: url(../img/assets/caret.svg);
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../img/assets/caret.svg);
 }

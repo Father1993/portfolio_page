@@ -1,14 +1,21 @@
+// Main block typing
 let typed = new Typed('#element', {
     strings: [
         'I create web interfaces.',
-        'I am engaged in the development and modification of websites.',
+        'I`am engaged in the development and modification of websites.',
     ],
     typeSpeed: 80,
     loop: true,
 });
 
-// Highlight mouse hover
+// Say hello button
+let sayHello = new Typed('#contact', {
+    strings: ['Say Hello...'],
+    typeSpeed: 130,
+    loop: true,
+});
 
+// Highlight mouse hover
 let originalBGplaypen = $('#playpen').css('background-color'),
     x,
     y,
@@ -54,7 +61,7 @@ $('#playpen')
         $(this).css({ background: originalBGplaypen });
     });
 
-// Градиент анимация E-mail
+// Gradient animation E-mail
 function changeGradient() {
     const email = document.querySelector('.email__mail');
     email.classList.toggle('change-color');

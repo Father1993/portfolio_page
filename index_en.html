@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Andrej Spinej</title>
 
     <!-- Favicons -->
@@ -25,8 +26,16 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Descriptions -->
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <meta name="description" content="Сайт портфолио">
+    <meta name="keywords" content="портфолио, Хабаровск, frontend, программист, разработчик, full-stack, backend">
+    <meta name="author" content="Andrej Spinej">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="ru, en">
+    <meta name="theme-color" content="dark">
+    <meta name="og:title" content="Andrej Spinej">
+    <meta name="og:description" content="Сайт портфолио">
+    <meta name="og:image" content="./src/img/assets/logo-website.png">
+    <meta name="og:url" content="https://spinej.com">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="/src/styles/fonts/stylesheet.css">
@@ -52,27 +61,28 @@
             <div class="container">
                 <div class="header d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
     
-                    <a href="#" class="p-0 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                    <img src="./src/img/Logo.png" alt="logo" width="200px" style="margin-right: 30px">
+                    <a href="index.html" class="p-0 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img decoding="async" src="./src/img/assets/logo-website.png" alt="logo" width="200px" style="margin-right: 30px">
                     </a>
     
                     <div class="col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-
                         <!-- Кнопки выбора языка -->
-                        <a class="header__btn btn btn-outline-light me-2" href="./index.html">RU</a></button>
-                        <a class="header__btn btn btn-outline-light me-2" href="./index_en.html">EN</a></button>
+                        <div>
+                            <a class="header__btn rus btn btn-outline-light" href="./index.html">RU</a></button>
+                            <a class="header__btn eng btn btn-outline-light" style="background-color: #00c26a" href="./index_en.html">EN</a></button>
+                        </div>
 
                         <!-- Кнопки смены темы -->
                         <!-- <button type="button" class="btn btn-warning">Theme</button> -->
 
-                    </div>      
+                    </div>    
     
                     <ul class="nav text-end">
                         <li><a href="#about-me" class="header__nav-link nav-link px-2 text-secondary">About me</a></li>
                         <li><a href="#skills" class="header__nav-link nav-link px-2 text-white">Skills</a></li>
                         <li><a href="#project" class="header__nav-link nav-link px-2 text-white">Projects</a></li>
                         <li><a href="#experience" class="header__nav-link nav-link px-2 text-white">Experience</a></li>
-                        
+                        <li><a href="#contact" class="header__nav-link nav-link px-2 text-white">Contacts</a></li>
                     </ul>
         
                 </div>
@@ -82,7 +92,7 @@
         <main>
             <article class="hero">
                 <div class="container hero__container padding__container">
-                    <h1 class="hero__title">Hello my Name is</h1>
+                    <h1 class="hero__title">Hi, my name is</h1>
                     <h2 class="hero__name">Andrej Spinej</h2>
                     <span class="hero__descr" id="element"></span>
                     <p class="hero__about">I&nbsp;am a&nbsp;frontend developer, specializing in&nbsp;creating digital technologies. I&nbsp;am currently focused on&nbsp;creating accessible, human-centered solutions and products.</p>
@@ -114,18 +124,19 @@
                             </div>
         
                             <div class="about__photo col">
-                                <img 
+                                <img
+                                    decoding="async"
                                     class="photo__card"
-                                    src="./src/img/my-1280.webp"
+                                    src="./src/assets/img/my-1280.webp"
                                     srcset="
-                                    ./src/img/my-480.webp 480w,
-                                    ./src/img/my-768.webp 768w,
-                                    ./src/img/my-1280.webp 1280w
+                                    ./src/img/assets/my-480.webp 480w,
+                                    ./src/img/assets/my-768.webp 768w,
+                                    ./src/img/assets/my-1280.webp 1280w
                                 "
                                     sizes="(max-width: 480px) 480px,
                                             (max-width: 768px) 768px,
                                             1280px"
-                                    alt="Spiney Andrey"
+                                    alt="Andrej Spinejw"
                                 >
                             </div>
                         </div>
@@ -138,25 +149,25 @@
                     <div class="row">
     
                         <h2 class="skills__title margin__text">Skills</h2>
-                        <h3>Skills, tools and technologies that I am proficient in:</h3>
+                        <h3 class="skills__description">Skills, tools and technologies that I&nbsp;am proficient&nbsp;in:</h3>
                         <div class="skills__block">
     
                             <ul class="skills__list">
-                                <li><img class="skills__icon" src="./src/img/tech/js.png" alt="JS_icon">JavaScript</li>
-                                <li><img class="skills__icon" src="./src/img/tech/react.png" alt="React_icon">React</li>
-                                <li><img class="skills__icon" src="./src/img/tech/node.png" alt="Node_icon">Node.js</li>
-                                <li><img class="skills__icon" src="./src/img/tech/docker.png" alt="Docker_icon">Docker</li>
-                                <li><img class="skills__icon" src="./src/img/tech/html.png" alt="HTML_icon">HTML</li>
-                                <li><img class="skills__icon" src="./src/img/tech/css.png" alt="CSS_icon">CSS</li>
-                                <li><img class="skills__icon" src="./src/img/tech/php.png" alt="PHP_icon">PHP</li>
-                                <li><img class="skills__icon" src="./src/img/tech/python.png" alt="Python_icon">Python</li>
-                                <li><img class="skills__icon" src="./src/img/tech/sql.png" alt="SQL_icon">SQL</li>
-                                <li><img class="skills__icon" src="./src/img/tech/bootstap.png" alt="Bootstrap_icon">Bootstrap</li>
-                                <li><img class="skills__icon" src="./src/img/tech/wordpress.png" alt="WordPress_icon">WordPress</li>
-                                <li><img class="skills__icon" src="./src/img/tech/git.png" alt="Git_icon">Git</li>
-                                <li><img class="skills__icon" src="./src/img/tech/npm.png" alt="NPM_icon">npm</li>
-                                <li><img class="skills__icon" src="./src/img/tech/bash.png" alt="Bash_icon">bash</li>
-                                <li><img class="skills__icon" src="./src/img/tech/linux.png" alt="Linux_icon">Linux</li>
+                                <li><img decoding="async" class="skills__icon" src="./src/img/tech/js.png" alt="JS_icon">JavaScript</li>
+                                <li><img decoding="async" class="skills__icon" src="./src/img/tech/react.png" alt="React_icon">React</li>
+                                <li><img decoding="async" class="skills__icon" src="./src/img/tech/node.png" alt="Node_icon">Node.js</li>
+                                <li><img decoding="async" class="skills__icon" src="./src/img/tech/docker.png" alt="Docker_icon">Docker</li>
+                                <li><img decoding="async" class="skills__icon" src="./src/img/tech/html.png" alt="HTML_icon">HTML</li>
+                                <li><img decoding="async" class="skills__icon" src="./src/img/tech/css.png" alt="CSS_icon">CSS</li>
+                                <li><img decoding="async" class="skills__icon" src="./src/img/tech/php.png" alt="PHP_icon">PHP</li>
+                                <li><img decoding="async" class="skills__icon" src="./src/img/tech/python.png" alt="Python_icon">Python</li>
+                                <li><img decoding="async" class="skills__icon" src="./src/img/tech/sql.png" alt="SQL_icon">SQL</li>
+                                <li><img decoding="async" class="skills__icon" src="./src/img/tech/bootstap.png" alt="Bootstrap_icon">Bootstrap</li>
+                                <li><img decoding="async" class="skills__icon" src="./src/img/tech/wordpress.png" alt="WordPress_icon">WordPress</li>
+                                <li><img decoding="async" class="skills__icon" src="./src/img/tech/git.png" alt="Git_icon">Git</li>
+                                <li><img decoding="async" class="skills__icon" src="./src/img/tech/npm.png" alt="NPM_icon">npm</li>
+                                <li><img decoding="async" class="skills__icon" src="./src/img/tech/bash.png" alt="Bash_icon">bash</li>
+                                <li><img decoding="async" class="skills__icon" src="./src/img/tech/linux.png" alt="Linux_icon">Linux</li>
                             </ul>
                         </div>
                     </div>
@@ -168,7 +179,7 @@
                     <h2 class="jobs__title margin__text">Projects</h2>
     
                     <div class="jobs__descr">
-                        <h4 class="text-center m-5">Last three projects</h4>
+                        <h4 class="text-center m-5">Latest projects</h4>
                     </div>
     
                     <div class="jobs__content row row-cols-1 row-cols-md-1 row-cols-lg-3">
@@ -176,10 +187,10 @@
                         <div class="col">
                             <div class="card jobs__card">
                                 <div class="card-body">
-                                    <img class="project__img" src="./src/img/project/xinros_preview.jpg" alt="xinroshh-site">
+                                    <img decoding="async" class="project__img" src="./src/img/project/xinros_preview.jpg" alt="xinroshh-site">
                                     <div class="card__wrapper">
                                         <h5 class="card-title">Xinrosh</h5>
-                                        <p class="card-text">Landing page of a company for parallel import of spare parts for special equipment in the Russian Federation.</p>
+                                        <p class="card-text">Landing page of&nbsp;a&nbsp;company for parallel import of&nbsp;spare parts for special equipment in&nbsp;the Russian Federation.</p>
                                     </div>
                                     <div class="project__link">
                                         <a class="project__link-preview d-flex" href="#" target="_blank" class="card-link">Live Preview</a>
@@ -192,7 +203,7 @@
                         <div class="col">
                             <div class="card jobs__card">
                                 <div class="card-body">
-                                    <img class="project__img" src="./src/img/project/beats_preview.jpeg" alt="beats_studio">
+                                    <img decoding="async" class="project__img" src="./src/img/project/beats_preview.jpeg" alt="beats_studio">
                                     <div class="card__wrapper">
                                         <h5 class="card-title">Beats Studio Buds</h5>
                                         <p class="card-text">Freelance project: advertising page for Beats Studio headphones.</p>
@@ -208,10 +219,10 @@
                         <div class="col">
                             <div class="card jobs__card">
                                 <div class="card-body d-flex flex-column">
-                                    <img class="project__img" src="./src/img/project/vanilla_js_preview.jpeg" alt="memories-game">
+                                    <img decoding="async"  class="project__img" src="./src/img/project/vanilla_js_preview.jpeg" alt="memories-game">
                                     <div class="card__wrapper">
                                         <h5 class="card-title">Vanilla JS game</h5>
-                                        <p class="card-text">Written in pure JavaScript. Practice event Loop, setTimeout() + animation in CSS.</p>
+                                        <p class="card-text">Written in&nbsp;pure JavaScript. Practice event Loop, setTimeout() + animation in&nbsp;CSS.</p>
                                     </div>
                                     <div class="project__link">
                                         <a class="project__link-preview d-flex" href="https://65c60a3cd060d29373d059d2--fascinating-quokka-0f8f87.netlify.app/" target="_blank" class="card-link">Live Preview</a>
@@ -237,11 +248,81 @@
                     <div class="work__desc">
                         <h4>Here is a quick summary of my most recent experiences</h4>
                     </div>
+
+                    
     
-                    <div class="work__content">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <strong>Frontend developer @ Metalrezerv</strong>
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                    <p>
+                                        Developed and finalized more than one company website, layout, edits, SEO optimization, SQL queries, setting up&nbsp;Yandex Direct and YAN, metrics, creating advertising content in&nbsp;graphic editors, demand analytics, SMM, administration of&nbsp;social networks and accounts on&nbsp;trading platforms.
+                                    </p>
+                                    <button>JavaScript</button>
+                                    <button>PHP</button>
+                                    <button>HTML</button>
+                                    <button>Dev0ps</button>
+                                    <button>Bootstrap</button>
+                                    <button>SQL</button>
+                                    <button>WordPress</button>
+                                    <button>SEO</button>
+                                    <button>Webpack</button>
+                                    <button>Linux</button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <strong>Site administrator @ AutoTokyo</strong>
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    HTML/CSS/JS layout, Python created a&nbsp;telegram bot for sales + parsing information about competitors, WordPress, 1C-Bitix, SEO. Technical support + Working with clients, processing applications, communicating in&nbsp;instant messengers, presentations, closing deals, CRM, expanding the client base. SMM&nbsp;promotion, Administration of&nbsp;social networks: Telegram, YouTube, VK, Zen. Site administration. Advertising and promotion.
+                                </p>
+                                <button>JavaScript</button>
+                                <button>Python</button>
+                                <button>HTML</button>
+                                <button>WordPress</button>
+                                <button>SEO</button>
+                                <button>Soft skills</button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <strong>Computer repairman @ SV-service</strong>
+                            </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Visiting the client, installing&nbsp;OS, software, setting up&nbsp;equipment, repairing equipment: smartphones, PCs, laptops, TVs. Cleaning, simple soldering, diagnostics.
+                                </p>
+                                <button>Soft skills</button>
+                                <button>Communication and sales skills</button>
+                            </div>
+                            </div>
+                        </div>
                     </div>
     
                 </div>
+            </section>
+
+            <section class="container contact__section d-flex flex-column">
+                <h5 class="text-center contact__title">Offers?</h5>
+                <p class="text-center contact__descr">Although I&rsquo;m not currently looking for new opportunities, my&nbsp;email is&nbsp;always open. Whether you have a&nbsp;question or&nbsp;just want to&nbsp;say&nbsp;hi, I&nbsp;will try to&nbsp;answer you as&nbsp;soon as&nbsp;possible!</p>
+                <a class="contact__email" href="mailto:enjoyhillol@gmail.com">
+                    <span id="contact"></span>
+                </a>
             </section>
         </main>
     
@@ -255,34 +336,34 @@
                     <ul class="footer__nav d-flex flex-column">
                         <li class="ms-3">
                             <a class="text-muted"target="_blank" href="https://t.me/Anri_khv">
-                                <img class="svg" src="./src/img/social/telegram.svg" alt="telegram_social_icon">
+                                <img decoding="async" class="svg" src="./src/img/social/telegram.svg" alt="telegram_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
                             <a class="text-muted"target="_blank" href="https://wa.me/79098763797">
-                                <img src="./src/img/social/whatsapp.svg" alt="whatsapp_social_icon">
+                                <img decoding="async" src="./src/img/social/whatsapp.svg" alt="whatsapp_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
                             <a class="text-muted" href="tel:+79098763797">
-                                <img src="./src/img/social/phone-fill.svg" alt="phone_social_icon">
+                                <img decoding="async" src="./src/img/social/phone-fill.svg" alt="phone_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://github.com/Father1993">
-                                <img src="./src/img/social/github.svg" alt="github_social_icon">
+                                <img decoding="async" src="./src/img/social/github.svg" alt="github_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://www.linkedin.com/in/andrey-spiney/">
-                                <img src="/src/img/social/linkedin.svg" alt="linkedin_social_icon">
+                                <img decoding="async" src="/src/img/social/linkedin.svg" alt="linkedin_social_icon">
                             </a>
                         </li>
                     </ul>
                 </div>
     
                 <div class="footer__email d-flex">
-                    <a href="mailto:enjoyhillol@gmail.com">
+                    <a class="footer__link" href="mailto:enjoyhillol@gmail.com">
                         <p class="email__mail">enjoyhillol@gmail.com</p>
                     </a>
                 </div>
