@@ -1,48 +1,90 @@
 @font-face {
     font-family: 'Hack';
-    src: url('Hack-Italic.eot');
+    src: url('Hack-Italic.woff2');
     src: local('Hack Italic'), local('Hack-Italic'),
-        url('Hack-Italic.eot?#iefix') format('embedded-opentype'),
         url('Hack-Italic.woff2') format('woff2'),
-        url('Hack-Italic.woff') format('woff'),
-        url('Hack-Italic.ttf') format('truetype');
+        url('Hack-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Hack';
-    src: url('Hack-Bold.eot');
+    src: url('Hack-Bold.woff2');
     src: local('Hack Bold'), local('Hack-Bold'),
-        url('Hack-Bold.eot?#iefix') format('embedded-opentype'),
         url('Hack-Bold.woff2') format('woff2'),
-        url('Hack-Bold.woff') format('woff'),
-        url('Hack-Bold.ttf') format('truetype');
+        url('Hack-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Hack';
-    src: url('Hack-BoldItalic.eot');
+    src: url('Hack-BoldItalic.woff2');
     src: local('Hack Bold Italic'), local('Hack-BoldItalic'),
-        url('Hack-BoldItalic.eot?#iefix') format('embedded-opentype'),
         url('Hack-BoldItalic.woff2') format('woff2'),
-        url('Hack-BoldItalic.woff') format('woff'),
-        url('Hack-BoldItalic.ttf') format('truetype');
+        url('Hack-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Hack';
-    src: url('Hack-Regular.eot');
+    src: url('Hack-Regular.woff2');
     src: local('Hack Regular'), local('Hack-Regular'),
-        url('Hack-Regular.eot?#iefix') format('embedded-opentype'),
         url('Hack-Regular.woff2') format('woff2'),
-        url('Hack-Regular.woff') format('woff'),
-        url('Hack-Regular.ttf') format('truetype');
+        url('Hack-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Mixcoatl Mono';
+    src: url('./MixcoatlMono/MixcoatlMono.woff2');
+    src: local('Mixcoatl Mono'), local('MixcoatlMono'),
+        url('./MixcoatlMono/MixcoatlMono.woff2') format('woff2'),
+        url('./MixcoatlMono/MixcoatlMono.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TeXGyreCursor';
+    src: url('./TeXGyre/TeXGyreCursor-Bold.woff2');
+    src: local('TeXGyreCursor-Bold'),
+        url('./TeXGyre/TeXGyreCursor-Bold.woff2') format('woff2'),
+        url('./TeXGyre/TeXGyreCursor-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyreCursor';
+    src: url('./TeXGyre/TeXGyreCursor-Regular.woff2');
+    src: local('TeXGyreCursor-Regular'),
+        url('./TeXGyre/TeXGyreCursor-Regular.woff2') format('woff2'),
+        url('./TeXGyre/TeXGyreCursor-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeXGyreCursor';
+    src: url('./TeXGyre/TeXGyreCursor-BoldItalic.woff2');
+    src: local('TeXGyreCursor-BoldItalic'),
+        url('./TeXGyre/TeXGyreCursor-BoldItalic.woff2') format('woff2'),
+        url('./TeXGyre/TeXGyreCursor-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TeXGyreCursor';
+    src: url('./TeXGyre/TeXGyreCursor-Italic.woff2');
+    src: local('TeXGyreCursor-Italic'),
+        url('./TeXGyre/TeXGyreCursor-Italic.woff2') format('woff2'),
+        url('./TeXGyre/TeXGyreCursor-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}

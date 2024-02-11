@@ -1,7 +1,7 @@
 let typed = new Typed('#element', {
     strings: [
-        'Создаю web интерфейсы.',
-        'Занимаюсь разработкой и доработкой сайтов.',
+        'I create web interfaces.',
+        'I am engaged in the development and modification of websites.',
     ],
     typeSpeed: 80,
     loop: true,

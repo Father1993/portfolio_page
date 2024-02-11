@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Mixcoatl Mono';
+    src: url('MixcoatlMono.eot');
+    src: local('Mixcoatl Mono'), local('MixcoatlMono'),
+        url('MixcoatlMono.eot?#iefix') format('embedded-opentype'),
+        url('MixcoatlMono.woff2') format('woff2'),
+        url('MixcoatlMono.woff') format('woff'),
+        url('MixcoatlMono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
