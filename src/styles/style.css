@@ -310,9 +310,7 @@ a {
 }
 
 .footer__email a:hover {
-    transform: scale(1.05);
     color: #64ff7e;
-    transition: transform 0.2s ease-in-out;
 }
 
 .email__mail {
