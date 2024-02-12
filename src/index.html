@@ -62,14 +62,14 @@
                 <div class="header d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
     
                     <a href="index.html" class="p-0 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                    <img decoding="async" src="./img/assets/logo-website.webp" alt="logo" width="200px" style="margin-right: 30px">
+                    <img decoding="async" src="./img/assets/logo-website.webp" alt="logo" class="header__logo">
                     </a>
     
-                    <div class="col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <div class="header__button-wrapper col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                         <!-- Кнопки выбора языка -->
                         <div>
-                            <a class="header__btn rus btn btn-outline-light" style="background-color: #00c26a" href="./index.html">RU</a></button>
-                            <a class="header__btn eng btn btn-outline-light" href="./index_en.html">EN</a></button>
+                            <a class="header__btn rus btn btn-outline-light" style="background-color: #00c26a" href="./index.html">RU</a>
+                            <a class="header__btn eng btn btn-outline-light" href="./index_en.html">EN</a>
                         </div>
                         
                         <!-- Кнопки смены темы -->
@@ -101,12 +101,12 @@
             </article>
     
             <section class="about">
-                <div class="container padding__container">
+                <div class="about__wrapper container padding__container">
                     <div class="about__title">
     
                         <h2 class="about__us margin__text">Обо мне</h2>
-                        <div class="row col about__container">
-                            <div class="about__block col" id="about-me">
+                        <div class="about__container">
+                            <div class="about__block" id="about-me">
                                 <div class="block__info">
                                     <p>Мне нравится создавать вещи, которые живут в&nbsp;интернете. Мой интерес к&nbsp;веб-разработке начался еще в&nbsp;2020&nbsp;году, когда я&nbsp;решил попробовать создать сайт. И&nbsp;оказывается, создание даже пользовательской кнопки научило меня многому в&nbsp;HTML и&nbsp;CSS!</p>
                                     <p>Перенесемся в&nbsp;сегодняшний день: мне посчастливилось работать в&nbsp;рекламном агентстве, небольшой компании по&nbsp;продаже товаров со&nbsp;своим сайтом где я&nbsp;был Frontend разработчиком. Решал бизнес задачи путем разработки новых фичей.</p>
@@ -114,17 +114,20 @@
                                     <p>Я&nbsp;также продолжаю изучать новые технологии которые будут полезны мне в&nbsp;работе. Сейчас изучаю React, Node.js, TypeScript. Хочу развиваться в направлении Full Stack.</p>
                                     <p>Вот несколько технологий, с&nbsp;которыми я&nbsp;работал в&nbsp;последнее время:</p>
                                 </div>
-                                <ul class="about__skills">
-                                    <li class="about__list">JavaScript</li>
-                                    <li class="about__list">React</li>
-                                    <li class="about__list">NodeJS</li>
-                                    <li class="about__list">Express</li>
-                                    <li class="about__list">Git</li>
-                                    <li class="about__list">Docker</li>
-                                </ul>
+                                <div class="about__skills-wrapper">
+                                    <ul class="about__skills">
+                                        <li class="about__list">JavaScript</li>
+                                        <li class="about__list">React</li>
+                                        <li class="about__list">NodeJS</li>
+                                        <li class="about__list">Express</li>
+                                        <li class="about__list">Git</li>
+                                        <li class="about__list">Docker</li>
+                                    </ul>
+                                </div>
+                                
                             </div>
         
-                            <div class="about__photo col">
+                            <div class="about__photo">
                                 <img
                                     decoding="async"
                                     class="photo__card"
@@ -146,7 +149,7 @@
             </section>
     
             <section class="skills" id="skills">
-                <div class="container padding__container">
+                <div class="skills__wrapper container">
                     <div class="row">
     
                         <h2 class="skills__title margin__text">Skills</h2>
@@ -194,8 +197,8 @@
                                         <p class="card-text">Landing page компании по параллельному импорту запчастей на спецтехнику в РФ.</p>
                                     </div>
                                     <div class="project__link">
-                                        <a class="project__link-preview d-flex" href="#" target="_blank" class="card-link">Live Preview</a>
-                                        <a class="project__link-code d-flex" href="#" target="_blank" class="card-link">View Code</a>
+                                        <a class="card-link project__link-preview d-flex" href="#" target="_blank">Live Preview</a>
+                                        <a class="card-link project__link-code d-flex" href="#" target="_blank">View Code</a>
                                     </div>
                                 </div>
                             </div>
@@ -210,8 +213,8 @@
                                         <p class="card-text">Фриланс проект: рекламная страничка для наушников Beats Studio.</p>
                                     </div>
                                     <div class="project__link">
-                                        <a class="project__link-preview d-flex" href="https://symphonious-crumble-38f551.netlify.app/" target="_blank" class="card-link">Live Preview</a>
-                                        <a class="project__link-code d-flex" href="https://github.com/Father1993/Beats-Studio-Buds-" target="_blank" class="card-link">View Code</a>
+                                        <a class="card-link project__link-preview d-flex" href="https://symphonious-crumble-38f551.netlify.app/" target="_blank">Live Preview</a>
+                                        <a class="card-link project__link-code d-flex" href="https://github.com/Father1993/Beats-Studio-Buds-" target="_blank">View Code</a>
                                     </div>
                                 </div>
                             </div>
@@ -226,18 +229,18 @@
                                         <p class="card-text">Написана на чистом JavaScript. Практика eventLoop, setTimeout() + анимация на СSS.</p>
                                     </div>
                                     <div class="project__link">
-                                        <a class="project__link-preview d-flex" href="https://65c60a3cd060d29373d059d2--fascinating-quokka-0f8f87.netlify.app/" target="_blank" class="card-link">Live Preview</a>
-                                        <a class="project__link-code d-flex" href="https://github.com/Father1993/MemoryGameJS/tree/main" target="_blank" class="card-link">View Code</a>
+                                        <a class="card-link project__link-preview d-flex" href="https://65c60a3cd060d29373d059d2--fascinating-quokka-0f8f87.netlify.app/" target="_blank">Live Preview</a>
+                                        <a class="card-link project__link-code d-flex" href="https://github.com/Father1993/MemoryGameJS/tree/main" target="_blank">View Code</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
-                <div class="jobs__github text-center">
-                    <button class="jobs__btn btn btn-success"> 
-                        <a class="jobs__link" href="https://github.com/Father1993" target="_blank">Профиль GitHub</a>
-                    </button>
-                </div>
+
+            <div class="jobs__github text-center">
+                <a class="jobs__btn btn btn-success jobs__link" href="https://github.com/Father1993" target="_blank">Профиль GitHub</a>
+            </div>
                 
             </section>
     
@@ -328,26 +331,17 @@
         </main>
     
         <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
-                <div class="footer__wrapper col-md-4 d-flex align-items-center mx-auto">
-                    <span class="mb-3 mb-md-0 text-muted footer__text text-center">&copy; 2024 Дизайн спроектирован в Figma, код написан в Visual Studio Code. Создано с помощью JS, HTML, CSS, Bootstrap. Собранно в Webpack.</span>
-                </div>
-    
-                <div class="footer__contacts">
-                    <ul class="footer__nav d-flex flex-column">
+            <footer class="footer__block d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+                <div class="footer__contacts-lg">
+                    <ul class="footer__nav-lg d-flex">
                         <li class="ms-3">
-                            <a class="text-muted"target="_blank" href="https://t.me/Anri_khv">
+                            <a class="text-muted" target="_blank" href="https://t.me/Anri_khv">
                                 <img decoding="async" class="svg" src="./img/social/telegram.svg" alt="telegram_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
-                            <a class="text-muted"target="_blank" href="https://wa.me/79098763797">
+                            <a class="text-muted" target="_blank" href="https://wa.me/79098763797">
                                 <img decoding="async" src="./img/social/whatsapp.svg" alt="whatsapp_social_icon">
-                            </a>
-                        </li>
-                        <li class="ms-3">
-                            <a class="text-muted" href="tel:+79098763797">
-                                <img decoding="async" src="./img/social/phone-fill.svg" alt="phone_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
@@ -362,6 +356,35 @@
                         </li>
                     </ul>
                 </div>
+                <div class="footer__wrapper col-md-4 d-flex align-items-center mx-auto">
+                    <span class="mb-3 mb-md-0 text-muted footer__text text-center">&copy; 2024 Дизайн спроектирован в Figma, код написан в Visual Studio Code. Создано с помощью JS, HTML, CSS, Bootstrap. Собранно в Webpack и Gulp.</span>
+                </div>
+    
+                <div class="footer__contacts">
+                    <ul class="footer__nav d-flex flex-column">
+                        <li class="ms-3">
+                            <a class="text-muted" target="_blank" href="https://t.me/Anri_khv">
+                                <img decoding="async" class="svg" src="./img/social/telegram.svg" alt="telegram_social_icon">
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-muted" target="_blank" href="https://wa.me/79098763797">
+                                <img decoding="async" src="./img/social/whatsapp.svg" alt="whatsapp_social_icon">
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-muted" target="_blank" href="https://github.com/Father1993">
+                                <img decoding="async" src="./img/social/github.svg" alt="github_social_icon">
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-muted" target="_blank" href="https://www.linkedin.com/in/andrey-spiney/">
+                                <img decoding="async" src="./img/social/linkedin.svg" alt="linkedin_social_icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
     
                 <div class="footer__email d-flex">
                     <a class="footer__link" href="mailto:enjoyhillol@gmail.com">

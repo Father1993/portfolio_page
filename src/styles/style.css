@@ -21,8 +21,6 @@ a {
 *:focus {
     border: none;
     outline: 2px solid #64ff7e;
-    -webkit-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
-    -moz-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
     box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
 }
 
@@ -38,12 +36,18 @@ a {
 }
 
 .header__btn:hover {
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 .header-b {
     background-image: url('../img/assets/background.png');
     background-repeat: no-repeat;
+    background-position: top;
+}
+
+.header__logo {
+    width: 200px;
+    margin-right: 30px;
 }
 
 .header {
@@ -81,8 +85,7 @@ a {
 }
 
 .padding__container {
-    margin-top: 130px;
-    padding: 0 150px 0 150px;
+    margin-top: 170px;
 }
 
 .hero__container {
@@ -111,6 +114,10 @@ a {
 
 .about {
     margin-top: 400px;
+}
+
+.about__title {
+    height: 850px;
 }
 
 .about__skills {
@@ -164,7 +171,12 @@ a {
 }
 
 .about__container {
-    height: 530px;
+    display: flex;
+}
+
+.about__block {
+    width: 45%;
+    margin-right: 70px;
 }
 
 .about__us::before {
@@ -182,10 +194,6 @@ a {
     width: 290px;
     height: 1px;
     background-color: #64ff7e;
-}
-
-.about {
-    margin-bottom: 300px;
 }
 
 .skills__title::before {
@@ -265,7 +273,15 @@ a {
 }
 
 .footer__nav li:not(:first-child) {
-    margin-top: 20px;
+    margin-top: 35px;
+}
+
+.footer__nav li a img:hover {
+    transform: scale(1.05);
+    background: #00c26a;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    transition: background, border-radius 0.3s ease-in-out;
 }
 
 .footer__nav::after {
@@ -276,7 +292,7 @@ a {
     bottom: 0;
     width: 230px;
     height: 1px;
-    rotate: 90deg;
+    transform: rotate(90deg);
     background-color: #d5d5d5;
 }
 
@@ -293,13 +309,19 @@ a {
     letter-spacing: 3px;
 }
 
+.footer__email a:hover {
+    transform: scale(1.05);
+    color: #64ff7e;
+    transition: transform 0.2s ease-in-out;
+}
+
 .email__mail {
     margin-top: 15px;
     text-decoration: none;
 }
 
 .footer__email::after {
-    rotate: 90deg;
+    transform: rotate(90deg);
     content: '';
     display: block;
     position: fixed;
@@ -319,6 +341,9 @@ a {
     width: 270px;
     height: 1px;
     background-color: #64ff7e;
+}
+.contact__section {
+    margin-bottom: 130px;
 }
 
 .work__title::after {
@@ -421,7 +446,7 @@ a {
 }
 
 .footer__link {
-    rotate: 90deg;
+    transform: rotate(90deg);
 }
 
 .fade-in {
@@ -525,8 +550,6 @@ a {
 .accordion-button:focus {
     border: none;
     outline: 2px solid #64ff7e;
-    -webkit-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
-    -moz-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
     box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
     background: transparent;
 }
@@ -544,8 +567,6 @@ a {
 .btn:focus {
     border: none;
     outline: 2px solid #64ff7e;
-    -webkit-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
-    -moz-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
     box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
 }
 
@@ -554,4 +575,276 @@ a {
 }
 .accordion-button:not(.collapsed)::after {
     background-image: url(../img/assets/caret.svg);
+}
+
+.footer__block {
+    display: flex;
+    flex-direction: column;
+}
+.footer__nav-lg li {
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 70px;
+}
+.footer__nav-lg {
+    margin: 0;
+    padding: 0;
+}
+.footer__wrapper {
+    margin-top: 20px;
+}
+
+.footer__contacts-lg {
+    display: none;
+}
+
+/* Медиа запросы под популярные разрешения */
+@media only screen and (max-width: 1630px) {
+    .container {
+        width: 950px;
+    }
+}
+@media only screen and (max-width: 1590px) {
+}
+
+@media only screen and (max-width: 1490px) {
+}
+
+@media only screen and (max-width: 1399px) {
+    .hero__descr,
+    .hero__name {
+        font-size: 26px;
+    }
+    .footer__contacts-lg {
+        display: flex;
+    }
+    .footer__contacts,
+    .footer__link {
+        display: none;
+    }
+    .footer__nav::after {
+        display: none;
+    }
+    .footer__email::after {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .hero__descr,
+    .hero__name {
+        font-size: 20px;
+    }
+    .hero__about {
+        font-size: 20px;
+    }
+    .about__title {
+        height: 1300px;
+    }
+    .about__container {
+        flex-direction: column-reverse;
+    }
+    .about__photo {
+        height: 500px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .about__block {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        width: 858px;
+    }
+    .about__block p {
+        font-size: 24px;
+    }
+    .about__list {
+        font-size: 1.3rem;
+    }
+    .skills__list li {
+        font-size: 18px;
+    }
+    .skills__description {
+        margin-bottom: 50px;
+    }
+    .padding__container {
+        margin-bottom: 350px;
+    }
+
+    .about__skills-wrapper {
+        margin-top: 50px;
+    }
+    .about {
+        margin-top: 230px;
+    }
+    .about__skills {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .footer__contacts-lg {
+        display: flex;
+    }
+    .about__block {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        width: 650px;
+    }
+    .skills {
+        margin-top: 450px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    .hero__about {
+        width: 590px;
+    }
+    .header {
+        padding: 10px 0 10px 0;
+        justify-content: space-around;
+    }
+    .header__nav-link {
+        font-size: 14px;
+    }
+    .header__logo {
+        width: 80px;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+    .header__button-wrapper {
+        width: 100px;
+    }
+    .jobs__card {
+        margin-bottom: 70px;
+    }
+    .skills__list {
+        width: 490px;
+    }
+    .about {
+        margin-top: 270px;
+        margin-bottom: 170px;
+    }
+    .footer__contacts,
+    .footer__link {
+        display: none;
+    }
+    .footer__nav::after {
+        display: none;
+    }
+    .footer__email::after {
+        display: none;
+    }
+    .footer__wrapper {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header__nav-link {
+        font-size: 14px !important;
+    }
+    .about__block {
+        width: 100%;
+    }
+    .header__button-wrapper {
+        text-align: center;
+    }
+    .header__logo {
+        margin-left: 30px;
+    }
+    .header__nav-link {
+        font-size: 14px;
+    }
+    .skills__list {
+        width: 500px;
+    }
+    .hero__about {
+        width: 550px;
+    }
+    .block__info p {
+        font-size: 20px;
+    }
+    .about {
+        margin-top: 170px;
+    }
+    .jobs__card {
+        margin-bottom: 70px;
+    }
+    .footer__contacts {
+        display: none;
+    }
+    .footer__nav::after {
+        display: none;
+    }
+    .footer__link {
+        display: none;
+    }
+    .footer__email::after {
+        display: none;
+    }
+    .footer__wrapper {
+        width: 80%;
+    }
+    .contact__descr {
+        width: 100%;
+    }
+    .padding__container {
+        margin-top: 230px;
+        margin-bottom: 0;
+    }
+    .about__list {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .about__block p {
+        font-size: 16px;
+    }
+    .container {
+        width: 100%;
+    }
+    .hero__about {
+        width: 370px;
+    }
+    .skills__list {
+        width: 327px;
+    }
+    .about__us {
+        text-align: center;
+    }
+    .skills {
+        margin-top: 200px;
+    }
+    .about__us::after,
+    .skills__title::after,
+    .jobs__title::after,
+    .work__title::after {
+        display: none;
+    }
+    .skills__title,
+    .skills__description,
+    .jobs__title,
+    .work__title,
+    .work__desc {
+        text-align: center;
+    }
+    .hero__title,
+    .hero__name,
+    .hero__about {
+        text-align: center;
+    }
+    .hero__about {
+        width: 100%;
+    }
+    .hero__descr {
+        height: 30px;
+        display: block;
+        text-align: center;
+    }
+    .typed-cursor {
+        display: none;
+    }
 }

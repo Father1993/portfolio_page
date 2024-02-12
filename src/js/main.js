@@ -61,13 +61,6 @@ $('#playpen')
         $(this).css({ background: originalBGplaypen });
     });
 
-// Gradient animation E-mail
-function changeGradient() {
-    const email = document.querySelector('.email__mail');
-    email.classList.toggle('change-color');
-}
-setInterval(changeGradient, 1000);
-
 window.addEventListener('scroll', fadeIn);
 
 function fadeIn() {
