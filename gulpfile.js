@@ -1,8 +1,24 @@
 const gulp = require('gulp');
 
-gulp.task('hello', function (done) {
-    console.log('Hello from Gulp');
-    done();
-});
+require('./gulp/dev.js');
+require('./gulp/docs.js');
 
-gulp.task('default', gulp.series('hello'));
+// dev
+gulp.task(
+    'default',
+    gulp.series(
+        'clean:dev',
+        gulp.parallel('html:dev', 'images:dev', 'fonts:dev', 'js:dev'),
+        gulp.parallel('server:dev', 'watch:dev')
+    )
+);
+
+// prod
+gulp.task(
+    'docs',
+    gulp.series(
+        'clean:docs',
+        gulp.parallel('html:docs', 'images:docs', 'fonts:docs', 'js:docs'),
+        gulp.parallel('server:docs')
+    )
+);
