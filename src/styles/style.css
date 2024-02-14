@@ -3,6 +3,29 @@ body {
     color: #d5d5d5;
     font-family: 'TeXGyreCursor', Courier, monospace;
 }
+
+/* scrollbar  */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #00c26a #222222;
+}
+
+  /* Chrome, Edge и Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+}
+
+  *::-webkit-scrollbar-track {
+    background: #222222;
+}
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #00c26a;
+    border-radius: 20px;
+    border: 3px solid #222222;
+}
+
 h1,
 h2,
 h3,
@@ -31,6 +54,7 @@ a {
     text-decoration: none;
     color: #d5d5d5;
 }
+
 .rus {
     margin-right: -7px;
 }
@@ -40,7 +64,7 @@ a {
 }
 
 .header-b {
-    background-image: url('../img/assets/background.png');
+    background-image: url('../img/assets/a_background.webp');
     background-repeat: no-repeat;
     background-position: top;
 }
@@ -48,6 +72,10 @@ a {
 .header__logo {
     width: 200px;
     margin-right: 30px;
+}
+
+.header__logo-orange {
+    display: none;
 }
 
 .header {
@@ -72,6 +100,11 @@ a {
 
 .header__nav-link:hover {
     color: #ffc107 !important;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .header__nav-link:hover:before {
@@ -249,6 +282,23 @@ a {
     margin: 0;
 }
 
+.jobs__card{
+    margin-top: 50px;
+}
+
+.special-text {
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.card__wrapper {
+    height: 250px;
+}
+
+.top-card {
+    height: 150px !important;
+}
+
 .footer__wrapper {
     margin-top: 50px;
     border-top: 1px #d5d5d5 solid;
@@ -276,12 +326,29 @@ a {
     margin-top: 35px;
 }
 
-.footer__nav li a img:hover {
-    transform: scale(1.05);
+.footer__links-hover:hover {
+    background: #00c26a;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+.footer__links-hover-last:hover {
+    background: #00c26a;
+    transition: transform 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+
+.footer__links-hover-md:hover {
     background: #00c26a;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
-    transition: background, border-radius 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+
+.footer__links-hover-md-last:hover {
+    background: #00c26a;
+    transition: transform 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
 }
 
 .footer__nav::after {
@@ -366,17 +433,28 @@ a {
 }
 
 .card-body {
-    height: 430px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0;
 }
 
+.project__link-code:hover, .project__link-preview:hover {
+    color: #64ff7e;
+}
+
+.card-link:hover::before {
+    background-color: #00c26a;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    transition: background, border-radius 0.3s ease-in-out;
+}
+
 .project__img {
     width: 100%;
     border-radius: 15px;
-    height: 200px;
+    height: 100%;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
 }
@@ -601,11 +679,20 @@ a {
     .container {
         width: 950px;
     }
-}
-@media only screen and (max-width: 1590px) {
-}
 
-@media only screen and (max-width: 1490px) {
+    .card__wrapper {
+        height: 350px;
+    }
+    .header {
+        flex-wrap: nowrap !important;
+    }
+    .header__nav-link {
+        font-size: 17px !important;
+    }
+
+    .spec-links {
+        font-size: 10px;
+    }
 }
 
 @media only screen and (max-width: 1399px) {
@@ -628,6 +715,10 @@ a {
     }
 }
 @media only screen and (max-width: 1199px) {
+
+    .wrapper-margin {
+        margin-bottom: 100px !important;
+    }
     .hero__descr,
     .hero__name {
         font-size: 20px;
@@ -681,6 +772,30 @@ a {
 }
 
 @media only screen and (max-width: 991px) {
+    .header__logo {
+        display: none;
+    }
+    .header__logo-orange {
+        display: block;
+    }
+
+    .special-text {
+        font-size: 20px;
+        line-height: normal;
+    }
+    
+    .header__lang-wrapper {
+        margin-left: 14px;
+        margin-bottom: 17px;
+    }
+
+    .header {
+        flex-direction: column;
+        flex-wrap: wrap !important;
+    }
+    .header__logo {
+        width: 170px;
+    }
     .footer__contacts-lg {
         display: flex;
     }
@@ -704,9 +819,20 @@ a {
         margin-top: 19px;
         margin-bottom: 19px;
     }
+    .skills__title {
+        margin-top: 170px;
+    }
+    .padding__container {
+        margin-bottom: 0px;
+    }
+
+    .spec-links {
+        font-size: 22px;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
+
     .hero__about {
         width: 590px;
     }
@@ -715,10 +841,10 @@ a {
         justify-content: space-around;
     }
     .header__nav-link {
-        font-size: 14px;
+        font-size: 15px;
     }
     .header__logo {
-        width: 80px;
+        width: 150px;
         margin-top: 15px;
         margin-right: 10px;
     }
@@ -748,11 +874,15 @@ a {
     .footer__wrapper {
         width: 80%;
     }
+
+    .last-card {
+        height: 230px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .header__nav-link {
-        font-size: 14px !important;
+        font-size: 15px !important;
     }
     .about__block {
         width: 100%;
@@ -806,6 +936,10 @@ a {
     .about__list {
         font-size: 0.8rem;
     }
+
+    .special-text {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -856,6 +990,32 @@ a {
     .typed-cursor {
         display: none;
     }
+
+    .wrapper-margin {
+        margin-top: 170px;
+    }
+
+    .skills__list {
+        width: auto;
+        padding: 0 20px 0 20px;
+    }
+    .padding__container {
+        margin-top: 155px;
+    }
+
+    .skills__title {
+        margin-top: 0px;
+    }
+    .about__skills-wrapper {
+        margin-top: 70px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+    .spec-links {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 440px) {
@@ -870,6 +1030,12 @@ a {
     }
     .photo__card {
         width: 320px;
+    }
+    .special-text {
+        font-size: 14px;
+    }
+    .spec-links {
+        font-size: 12px;
     }
 }
 

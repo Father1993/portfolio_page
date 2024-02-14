@@ -25,6 +25,11 @@
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#ffffff">
 
+    <meta property="og:title" content="Andrej Spinej Website">
+    <meta property="og:description" content="Portfolio">
+    <meta property="og:image" content="./img/assets/logo-website.png">
+    <meta property="og:url" content="https://spinej.ru">
+
     <!-- Descriptions -->
     <meta name="description" content="Сайт портфолио">
     <meta name="keywords" content="портфолио, Хабаровск, frontend, программист, разработчик, full-stack, backend">
@@ -62,12 +67,16 @@
                 <div class="header d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
     
                     <a href="index.html" class="p-0 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                    <img decoding="async" src="./img/assets/logo-website.webp" alt="logo" class="header__logo">
+                        <img decoding="async" src="./img/assets/logo-website.webp" alt="logo-green" class="header__logo">
+                    </a>
+    
+                    <a href="index.html" class="p-0 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <img decoding="async" src="./img/assets/logo-website__orange.webp" alt="logo-orange" class="header__logo header__logo-orange">
                     </a>
     
                     <div class="header__button-wrapper col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                         <!-- Кнопки выбора языка -->
-                        <div>
+                        <div class="header__lang-wrapper">
                             <a class="header__btn rus btn btn-outline-light" href="./index.html">RU</a>
                             <a class="header__btn eng btn btn-outline-light" style="background-color: #00c26a" href="./index_en.html">EN</a>
                         </div>
@@ -104,7 +113,7 @@
                 <div class="about__wrapper container padding__container">
                     <div class="about__title">
     
-                        <h2 class="about__us margin__text">Обо мне</h2>
+                        <h2 class="about__us margin__text">About me</h2>
                         <div class="about__container">
                             <div class="about__block" id="about-me">
                                 <div class="block__info">
@@ -140,7 +149,7 @@
                                     sizes="(max-width: 480px) 480px,
                                             (max-width: 768px) 768px,
                                             1280px"
-                                    alt="Andrej Spinejw"
+                                    alt="Andrej Spinej"
                                 >
                             </div>
                         </div>
@@ -177,22 +186,17 @@
                     </div>
                 </div>
             </section>
-    
             <section class="jobs" id="project">
-                <div class="container padding__container">
+                <div class="container padding__container wrapper-margin">
                     <h2 class="jobs__title margin__text">Projects</h2>
-    
-                    <div class="jobs__descr">
-                        <h4 class="text-center m-5">Latest projects</h4>
-                    </div>
     
                     <div class="jobs__content row row-cols-1 row-cols-md-1 row-cols-lg-3">
     
                         <div class="col">
                             <div class="card jobs__card">
                                 <div class="card-body">
-                                    <img decoding="async" class="project__img" src="./img/project/xinros_preview.webp" alt="xinroshh-site">
-                                    <div class="card__wrapper">
+                                    <img decoding="async" class="project__img" src="./img/project/xinros_preview.webp" alt="xinroshh-site-preview">
+                                    <div class="card__wrapper top-card">
                                         <h5 class="card-title">Xinrosh</h5>
                                         <p class="card-text">Landing page of&nbsp;a&nbsp;company for parallel import of&nbsp;spare parts for special equipment in&nbsp;the Russian Federation.</p>
                                     </div>
@@ -207,8 +211,8 @@
                         <div class="col">
                             <div class="card jobs__card">
                                 <div class="card-body">
-                                    <img decoding="async" class="project__img" src="./img/project/beats_preview.webp" alt="beats_studio">
-                                    <div class="card__wrapper">
+                                    <img decoding="async" class="project__img" src="./img/project/beats_preview.webp" alt="beats_studio-preview">
+                                    <div class="card__wrapper top-card">
                                         <h5 class="card-title">Beats Studio Buds</h5>
                                         <p class="card-text">Freelance project: advertising page for Beats Studio headphones.</p>
                                     </div>
@@ -219,12 +223,12 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="col">
                             <div class="card jobs__card">
                                 <div class="card-body d-flex flex-column">
-                                    <img decoding="async"  class="project__img" src="./img/project/vanilla_js_preview.webp" alt="memories-game">
-                                    <div class="card__wrapper">
+                                    <img decoding="async"  class="project__img" src="./img/project/vanilla_js_preview.webp" alt="memories-game-preview">
+                                    <div class="card__wrapper top-card">
                                         <h5 class="card-title">Vanilla JS game</h5>
                                         <p class="card-text">Written in&nbsp;pure JavaScript. Practice event Loop, setTimeout() + animation in&nbsp;CSS.</p>
                                     </div>
@@ -235,17 +239,114 @@
                                 </div>
                             </div>
                         </div>
-                </div>
-            </div>
 
-                <div class="jobs__github text-center">
-                        <a class="jobs__btn btn btn-success jobs__link" href="https://github.com/Father1993" target="_blank">GitHub profile</a>
+                        <div class="col">
+                            <div class="card jobs__card">
+                                <div class="card-body d-flex flex-column">
+                                    <img decoding="async"  class="project__img" src="./img/project/react_app_preview.webp" alt="React-app-preview">
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">React app</h5>
+                                        <p class="card-text special-text">API requests to&nbsp;the server to&nbsp;obtain a&nbsp;list of&nbsp;posts. There is&nbsp;a&nbsp;personal account, custom hooks to&nbsp;improve functionality, and a&nbsp;form for creating posts. It&nbsp;has the function of&nbsp;filtering and sorting posts, as&nbsp;well as&nbsp;page-by-page pagination. An&nbsp;infinite scroll function has been implemented, made through an&nbsp;invisible block, which allows you to&nbsp;load data partially through the API. The application provides loading animation when making a&nbsp;request to&nbsp;the server, making the wait more enjoyable. Each post can be&nbsp;opened or&nbsp;deleted separately.</p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a class="card-link project__link-code d-flex" href="https://github.com/Father1993/React_app_practice/tree/master" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        
+
+                        <div class="col">
+                            <div class="card jobs__card">
+                                <div class="card-body d-flex flex-column">
+                                    <img decoding="async"  class="project__img" src="./img/project/students-form_preview.webp" alt="memories-game">
+                                    <div class="card__wrapper last-card">
+                                        <h5 class="card-title">Student data management application</h5>
+                                        <p class="card-text">The practice of&nbsp;creating a&nbsp;simple server on&nbsp;HTTP, with processing GET, POST requests. Also practice with npm, Express, dotenv and standard Node.JS modules: path, http, fs, events, stream.</p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a class="card-link project__link-code d-flex" href="https://github.com/Father1993/Vanila-JS-Forms-Filter-Render" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card jobs__card">
+                                <div class="card-body d-flex flex-column">
+                                    <img decoding="async"  class="project__img" src="./img/project/time_app_nodejs_preview.webp" alt="docker-app-preview">
+                                    <div class="card__wrapper last-card">
+                                        <h5 class="card-title">Docker in a project with an API server on Nodejs + Express</h5>
+                                        <p class="card-text">The Time application consists of front-end and back-end parts. The frontend is written using the Vue.js framework. The backend is written using Node.js and Express. Database&nbsp;&mdash; MySQL</p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a class="card-link project__link-code d-flex" href="https://github.com/Father1993/Docker-full-practice" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col">
+                            <div class="card jobs__card">
+                                <div class="card-body d-flex flex-column">
+                                    <img decoding="async"  class="project__img" src="./img/project/calc_preview.webp" alt="calculate-app-preview">
+                                    <div class="card__wrapper last-card">
+                                        <h5 class="card-title">Calculator of calculating the cost of a car on order</h5>
+                                        <p class="card-text">TThe calculator can count both cars from Japan and cars from South Korea.
+                                            It&nbsp;can also calculate your bid in&nbsp;yen, based on&nbsp;your budget (for purchasing a&nbsp;car yourself from auctions in&nbsp;Japan)</p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a class="card-link project__link-code d-flex" href="https://github.com/Father1993/Foreign-car-buying-calculator" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="col">
+                            <div class="card jobs__card">
+                                <div class="card-body d-flex flex-column">
+                                    <img decoding="async"  class="project__img" src="./img/project/todo_preview.webp" alt="todo-app-preview">
+                                    <div class="card__wrapper last-card">
+                                        <h5 class="card-title">JavaScript (localStorage)</h5>
+                                        <p class="card-text">An&nbsp;application written in&nbsp;pure JS. Has&nbsp; 3 pages. Data is&nbsp;correctly saved and loaded from localStorage for each page.</p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a class="card-link project__link-code d-flex" href="https://github.com/Father1993/MemoryGameJS/tree/main" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card jobs__card">
+                                <div class="card-body d-flex flex-column">
+                                    <img decoding="async"  class="project__img" src="./img/project/perevozka27_preview.webp" alt="wordpress-sites">
+                                    <div class="card__wrapper last-card">
+                                        <h5 class="card-title">WordPress</h5>
+                                        <p class="card-text">There are several sites written on&nbsp;WordPress in&nbsp;production.<br> Simple landing page for local companies. Made with WordPress</p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a class="card-link project__link-preview spec-links d-flex" href="https://perevozka27.ru/" target="_blank">perevozka27.ru</a>
+                                        <a class="card-link project__link-preview spec-links d-flex" href="https://xn--90anbgibdchfetk.xn--p1ai/" target="_blank">помнимскорбим.рф</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+            <div class="jobs__github text-center">
+                <a class="jobs__btn btn btn-success jobs__link" href="https://github.com/Father1993" target="_blank">GitHub profile</a>
+            </div>
                 
             </section>
     
             <section class="work" id="experience">
-                <div class="container padding__container">
+                <div class="container padding__container wrapper-margin">
     
                     <h2 class="work__title margin__text">Experience</h2>
     
@@ -259,13 +360,17 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <strong>Frontend developer @ Металлрезерв</strong>
+                                <strong>Frontend-разработчик @ Металлрезерв</strong>
                             </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                     <p>
-                                        Developed and finalized more than one company website, layout, edits, SEO optimization, SQL queries, setting up&nbsp;Yandex Direct and YAN, metrics, creating advertising content in&nbsp;graphic editors, demand analytics, SMM, administration of&nbsp;social networks and accounts on&nbsp;trading platforms.
+                                        • He created and added elements and blocks, layout of the site and advertising landing, editing to production, added new functionality to the site.<br>
+                                        • SEO Optimization, Direct Settings, Metric Analysis.<br>
+                                        • Creation of advertising content in graphic editors.<br>
+                                        • Analytics of demand.<br>
+                                        • SMM conducted social networks and accounts on trading floors.
                                     </p>
                                     <button>JavaScript</button>
                                     <button>PHP</button>
@@ -283,13 +388,18 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <strong>Site administrator @ AutoTokyo</strong>
+                                <strong>Администратор сайта @ AutoTokyo</strong>
                             </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p>
-                                    HTML/CSS/JS layout, Python created a&nbsp;telegram bot for sales + parsing information about competitors, WordPress, 1C-Bitix, SEO. Technical support + Working with clients, processing applications, communicating in&nbsp;instant messengers, presentations, closing deals, CRM, expanding the client base. SMM&nbsp;promotion, Administration of&nbsp;social networks: Telegram, YouTube, VK, Zen. Site administration. Advertising and promotion.
+                                    • Verska site, multidional Makemam site and without, WordPress, 1C-bitix, PHP, SEO.<br>
+                                    • Debaging, working with someone else's code, amplification.<br>
+                                    • SMM, administration- Telegram, YouTube, VK, Zen. <br>
+                                    • Site administration.Advertising and promotion.<br>
+                                    • Working with clients, processing applications, communication in messengers, presentation, conclusion of transactions, CRM, expansion of the client base.<br>
+                                    • Technical support<br>
                                 </p>
                                 <button>JavaScript</button>
                                 <button>Python</button>
@@ -303,13 +413,16 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <strong>Computer repairman @ SV-service</strong>
+                                <strong>Computers repair master @ SV-service</strong>
                             </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p>
-                                    Visiting the client, installing&nbsp;OS, software, setting up&nbsp;equipment, repairing equipment: smartphones, PCs, laptops, TVs. Cleaning, simple soldering, diagnostics.
+                                    • Departure to the client, installation of the OS, by.<br>
+                                    • Equipment setup.<br>
+                                    • Repair of technology smartphones, PCs, laptops, TVs.<br>
+                                    • Cleaning, simple soldering, diagnosis.<br>
                                 </p>
                                 <button>Soft skills</button>
                                 <button>Communication and sales skills</button>
@@ -322,8 +435,8 @@
             </section>
 
             <section class="container contact__section d-flex flex-column">
-                <h5 class="text-center contact__title">Offers</h5>
-                <p class="text-center contact__descr">Although I&rsquo;m not currently looking for new opportunities, my&nbsp;email is&nbsp;always open. Whether you have a&nbsp;question or&nbsp;just want to&nbsp;say&nbsp;hi, I&nbsp;will try to&nbsp;answer you as&nbsp;soon as&nbsp;possible!</p>
+                <h5 class="text-center contact__title">Suggestions?</h5>
+                <p class="text-center contact__descr">Although I'm not looking for new opportunities at the moment, my mail is always open.If you have a question or just want to say hello, I will try to answer you as soon as possible!</p>
                 <a class="contact__email" href="mailto:enjoyhillol@gmail.com">
                     <span id="contact"></span>
                 </a>
@@ -336,50 +449,50 @@
                     <ul class="footer__nav-lg d-flex">
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://t.me/Anri_khv">
-                                <img decoding="async" class="svg" src="./img/social/telegram.svg" alt="telegram_social_icon">
+                                <img decoding="async" class="footer__links-hover-md" src="./img/social/telegram.svg" alt="telegram_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://wa.me/79098763797">
-                                <img decoding="async" src="./img/social/whatsapp.svg" alt="whatsapp_social_icon">
+                                <img class="footer__links-hover-md" decoding="async" src="./img/social/whatsapp.svg" alt="whatsapp_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://github.com/Father1993">
-                                <img decoding="async" src="./img/social/github.svg" alt="github_social_icon">
+                                <img class="footer__links-hover-md" decoding="async" src="./img/social/github.svg" alt="github_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://www.linkedin.com/in/andrey-spiney/">
-                                <img decoding="async" src="./img/social/linkedin.svg" alt="linkedin_social_icon">
+                                <img class="footer__links-hover-md" decoding="async" src="./img/social/linkedin.svg" alt="linkedin_social_icon">
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer__wrapper col-md-4 d-flex align-items-center mx-auto">
-                    <span class="mb-3 mb-md-0 text-muted footer__text text-center">&copy; 2024 Designed in Figma, code written in Visual Studio Code. Created using JS, HTML, CSS, Bootstrap. Compiled in Webpack and Gulp.</span>
+                    <span class="mb-3 mb-md-0 text-muted footer__text text-center">&copy; 2024 The design is designed in Figma, the code is written in Visual Studio Code.Created using JS, HTML, CSS, Bootstrap. Collected in Webpack and Gulp.</span>
                 </div>
     
                 <div class="footer__contacts">
                     <ul class="footer__nav d-flex flex-column">
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://t.me/Anri_khv">
-                                <img decoding="async" class="svg" src="./img/social/telegram.svg" alt="telegram_social_icon">
+                                <img decoding="async" class="footer__links-hover" src="./img/social/telegram.svg" alt="telegram_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://wa.me/79098763797">
-                                <img decoding="async" src="./img/social/whatsapp.svg" alt="whatsapp_social_icon">
+                                <img class="footer__links-hover" decoding="async" src="./img/social/whatsapp.svg" alt="whatsapp_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://github.com/Father1993">
-                                <img decoding="async" src="./img/social/github.svg" alt="github_social_icon">
+                                <img class="footer__links-hover" decoding="async" src="./img/social/github.svg" alt="github_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://www.linkedin.com/in/andrey-spiney/">
-                                <img decoding="async" src="./img/social/linkedin.svg" alt="linkedin_social_icon">
+                                <img class="footer__links-hover" decoding="async" src="./img/social/linkedin.svg" alt="linkedin_social_icon">
                             </a>
                         </li>
                     </ul>

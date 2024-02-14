@@ -25,6 +25,11 @@
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#ffffff">
 
+    <meta property="og:title" content="Andrej Spinej Website">
+    <meta property="og:description" content="Portfolio">
+    <meta property="og:image" content="./img/assets/logo-website.png">
+    <meta property="og:url" content="https://spinej.ru">
+
     <!-- Descriptions -->
     <meta name="description" content="Сайт портфолио">
     <meta name="keywords" content="портфолио, Хабаровск, frontend, программист, разработчик, full-stack, backend">
@@ -62,12 +67,16 @@
                 <div class="header d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
     
                     <a href="index.html" class="p-0 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                    <img decoding="async" src="./img/assets/logo-website.webp" alt="logo" class="header__logo">
+                    <img decoding="async" src="./img/assets/logo-website.webp" alt="logo-green" class="header__logo">
+                    </a>
+
+                    <a href="index.html" class="p-0 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <img decoding="async" src="./img/assets/logo-website__orange.webp" alt="logo-orange" class="header__logo header__logo-orange">
                     </a>
     
                     <div class="header__button-wrapper col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                         <!-- Кнопки выбора языка -->
-                        <div>
+                        <div class="header__lang-wrapper">
                             <a class="header__btn rus btn btn-outline-light" style="background-color: #00c26a" href="./index.html">RU</a>
                             <a class="header__btn eng btn btn-outline-light" href="./index_en.html">EN</a>
                         </div>
@@ -140,7 +149,7 @@
                                     sizes="(max-width: 480px) 480px,
                                             (max-width: 768px) 768px,
                                             1280px"
-                                    alt="Andrej Spinejw"
+                                    alt="Andrej Spinej"
                                 >
                             </div>
                         </div>
@@ -179,22 +188,18 @@
             </section>
     
             <section class="jobs" id="project">
-                <div class="container padding__container">
+                <div class="container padding__container wrapper-margin">
                     <h2 class="jobs__title margin__text">Проекты</h2>
-    
-                    <div class="jobs__descr">
-                        <h4 class="text-center m-5">Последние три</h4>
-                    </div>
     
                     <div class="jobs__content row row-cols-1 row-cols-md-1 row-cols-lg-3">
     
                         <div class="col">
                             <div class="card jobs__card">
                                 <div class="card-body">
-                                    <img decoding="async" class="project__img" src="./img/project/xinros_preview.webp" alt="xinroshh-site">
-                                    <div class="card__wrapper">
+                                    <img decoding="async" class="project__img" src="./img/project/xinros_preview.webp" alt="xinroshh-site-preview">
+                                    <div class="card__wrapper top-card">
                                         <h5 class="card-title">Xinrosh</h5>
-                                        <p class="card-text">Landing page компании по параллельному импорту запчастей на спецтехнику в РФ.</p>
+                                        <p class="card-text">Landing page компании по параллельному импорту запчастей и спецтехнику.</p>
                                     </div>
                                     <div class="project__link">
                                         <a class="card-link project__link-preview d-flex" href="#" target="_blank">Live Preview</a>
@@ -207,8 +212,8 @@
                         <div class="col">
                             <div class="card jobs__card">
                                 <div class="card-body">
-                                    <img decoding="async" class="project__img" src="./img/project/beats_preview.webp" alt="beats_studio">
-                                    <div class="card__wrapper">
+                                    <img decoding="async" class="project__img" src="./img/project/beats_preview.webp" alt="beats_studio-preview">
+                                    <div class="card__wrapper top-card">
                                         <h5 class="card-title">Beats Studio Buds</h5>
                                         <p class="card-text">Фриланс проект: рекламная страничка для наушников Beats Studio.</p>
                                     </div>
@@ -219,18 +224,115 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="col">
                             <div class="card jobs__card">
                                 <div class="card-body d-flex flex-column">
-                                    <img decoding="async"  class="project__img" src="./img/project/vanilla_js_preview.webp" alt="memories-game">
-                                    <div class="card__wrapper">
+                                    <img decoding="async"  class="project__img" src="./img/project/vanilla_js_preview.webp" alt="memories-game-preview">
+                                    <div class="card__wrapper top-card">
                                         <h5 class="card-title">Vanilla JS game</h5>
-                                        <p class="card-text">Написана на чистом JavaScript. Практика eventLoop, setTimeout() + анимация на СSS.</p>
+                                        <p class="card-text">Написана на нативном JavaScript. setTimeout, анимация на СSS.</p>
                                     </div>
                                     <div class="project__link">
                                         <a class="card-link project__link-preview d-flex" href="https://65c60a3cd060d29373d059d2--fascinating-quokka-0f8f87.netlify.app/" target="_blank">Live Preview</a>
                                         <a class="card-link project__link-code d-flex" href="https://github.com/Father1993/MemoryGameJS/tree/main" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card jobs__card">
+                                <div class="card-body d-flex flex-column">
+                                    <img decoding="async"  class="project__img" src="./img/project/react_app_preview.webp" alt="React-app-preview">
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">React app</h5>
+                                        <p class="card-text special-text">API-запросы к&nbsp;серверу для получения списка постов. Есть личный кабинет, кастомные хуки для улучшения функциональности, и&nbsp;форму для создания постов. Имеет функцию фильтрации и&nbsp;сортировки постов, а&nbsp;также постраничную пагинацию. Реализована функция бесконечного скролла, сделанная через невидимый блок, который позволяет подгружать данные частично через API. Приложение обеспечивает анимацию загрузки при запросе на&nbsp;сервер, делая ожидание более приятным. Каждый пост можно открыть или удалить отдельно.</p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a class="card-link project__link-code d-flex" href="https://github.com/Father1993/React_app_practice/tree/master" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        
+
+                        <div class="col">
+                            <div class="card jobs__card">
+                                <div class="card-body d-flex flex-column">
+                                    <img decoding="async"  class="project__img" src="./img/project/students-form_preview.webp" alt="memories-game">
+                                    <div class="card__wrapper last-card">
+                                        <h5 class="card-title">Приложение для управления данными студентов</h5>
+                                        <p class="card-text">Практика создания простого сервера на&nbsp;HTTP, с&nbsp;обработкой GET, POST запросов. Также практика с&nbsp;npm, Express, dotenv и&nbsp;стандартными модулями Node.JS: путь, http, fs, события, поток.</p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a class="card-link project__link-code d-flex" href="https://github.com/Father1993/Vanila-JS-Forms-Filter-Render" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card jobs__card">
+                                <div class="card-body d-flex flex-column">
+                                    <img decoding="async"  class="project__img" src="./img/project/time_app_nodejs_preview.webp" alt="docker-app-preview">
+                                    <div class="card__wrapper last-card">
+                                        <h5 class="card-title">Docker в проекте с API-сервером на NodeJS + Express</h5>
+                                        <p class="card-text">Приложение Time состоит из&nbsp;фронтенд- и&nbsp;бэкенд-частей. Фронтенд написан с&nbsp;помощью фреймворка Vue.js. Бэкэнд написан с&nbsp;использованием Node.js и&nbsp;Express. База данных&nbsp;&mdash; MySQL</p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a class="card-link project__link-code d-flex" href="https://github.com/Father1993/Docker-full-practice" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col">
+                            <div class="card jobs__card">
+                                <div class="card-body d-flex flex-column">
+                                    <img decoding="async"  class="project__img" src="./img/project/calc_preview.webp" alt="calculate-app-preview">
+                                    <div class="card__wrapper last-card">
+                                        <h5 class="card-title">Калькулятор расчета стоимости авто под заказ</h5>
+                                        <p class="card-text">Калькулятор может посчитать как автомобили из&nbsp;Японии, так и&nbsp;автомобили с&nbsp;Южной Кореи.
+                                            А&nbsp;так-же может высчитать вашу ставку в&nbsp;йенах, исходя из&nbsp;вашего бюджета (для самостоятельной покупки авто с&nbsp;аукционов Японии)</p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a class="card-link project__link-code d-flex" href="https://github.com/Father1993/Foreign-car-buying-calculator" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="col">
+                            <div class="card jobs__card">
+                                <div class="card-body d-flex flex-column">
+                                    <img decoding="async"  class="project__img" src="./img/project/todo_preview.webp" alt="todo-app-preview">
+                                    <div class="card__wrapper last-card">
+                                        <h5 class="card-title">JavaScript (localStorage)</h5>
+                                        <p class="card-text">Приложение, написанное на чистом JS. Имеет 3 страницы. Данные корректно сохраняются и подгружаются из localStorage для каждой страницы свои.</p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a class="card-link project__link-code d-flex" href="https://github.com/Father1993/MemoryGameJS/tree/main" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card jobs__card">
+                                <div class="card-body d-flex flex-column">
+                                    <img decoding="async"  class="project__img" src="./img/project/perevozka27_preview.webp" alt="wordpress-sites">
+                                    <div class="card__wrapper last-card">
+                                        <h5 class="card-title">WordPress</h5>
+                                        <p class="card-text">Есть несколько сайтов написанных на WordPress в продакшене.<br> Простые landing page для местных фирм. Сделаны на WordPress</p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a class="card-link project__link-preview spec-links d-flex" href="https://perevozka27.ru/" target="_blank">perevozka27.ru</a>
+                                        <a class="card-link project__link-preview spec-links d-flex" href="https://xn--90anbgibdchfetk.xn--p1ai/" target="_blank">помнимскорбим.рф</a>
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +347,7 @@
             </section>
     
             <section class="work" id="experience">
-                <div class="container padding__container">
+                <div class="container padding__container wrapper-margin">
     
                     <h2 class="work__title margin__text">Опыт работы</h2>
     
@@ -265,7 +367,11 @@
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                     <p>
-                                        Разрабатывал и&nbsp;дорабатывал не&nbsp;один сайт компании, верстка, правки, SEO оптимизация, SQL запросы, настройка Яндекс Директ и&nbsp;РСЯ, метрики, создание рекламного контента в&nbsp;графических редакторах, аналитика спроса, SMM, администрирование социальных сетей и&nbsp;аккаунтов на&nbsp;торговых площадках.
+                                        • Создавал и добавлял элементы и блоки, верстка сайта и рекламных лендингов, правки в продакшн, добавлял новый функционал на сайт.<br>
+                                        • SEO оптимизация, настройка Директа, анализ метрики.<br>
+                                        • Создание рекламного контента в графических редакторах.<br>
+                                        • Аналитика спроса.<br>
+                                        • SMM вел социальные сети и аккаунты на торговых площадках.
                                     </p>
                                     <button>JavaScript</button>
                                     <button>PHP</button>
@@ -289,7 +395,12 @@
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p>
-                                    Верстка HTML/CSS/JS, Python создал телеграмм бота для продаж + парсинг информации о&nbsp;конкурентах, WordPress, 1C-Bitix, SEO. Техническая поддержка + Работа с&nbsp;клиентами, обработка заявок, общение в&nbsp;мессенджерах, презентации, заключение сделок, CRM, расширение клиентской базы. SMM продвижение, Администрирование социальных сетей: Telegram, YouTube, ВК, Дзен. Администрирование сайта. Реклама и&nbsp;продвижение.
+                                    • Верстка сайта, многостраничного сайта по макетам и без, WordPress, 1C-Bitix, PHP, SEO.<br>
+                                    • Дебаггинг, работа с чужим кодом, внесение правок.<br>
+                                    • SMM, Администрирование- telegram, YouTube, ВК, Дзен. <br>
+                                    • Администрирование сайта. Реклама и продвижение.<br>
+                                    • Работа с клиентами, обработка заявок, общение в мессенджерах, презентации, заключение сделок, CRM, расширение клиентской базы.<br>
+                                    • Техническая поддержка<br>
                                 </p>
                                 <button>JavaScript</button>
                                 <button>Python</button>
@@ -309,7 +420,10 @@
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p>
-                                    Выезд к&nbsp;клиенту, установка ОС, ПО, настройка оборудования, ремонт техники смартфоны, пк, ноутбуки, телевизоры. Чистка, несложная пайка, диагностика.
+                                    • Выезд к клиенту, установка ОС, ПО.<br>
+                                    • Настройка оборудования.<br>
+                                    • Ремонт техники смартфоны, пк, ноутбуки, телевизоры.<br>
+                                    • Чистка, несложная пайка, диагностика.<br>
                                 </p>
                                 <button>Soft skills</button>
                                 <button>Навыки общения и продаж</button>
@@ -336,22 +450,22 @@
                     <ul class="footer__nav-lg d-flex">
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://t.me/Anri_khv">
-                                <img decoding="async" class="svg" src="./img/social/telegram.svg" alt="telegram_social_icon">
+                                <img decoding="async" class="footer__links-hover-md" src="./img/social/telegram.svg" alt="telegram_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://wa.me/79098763797">
-                                <img decoding="async" src="./img/social/whatsapp.svg" alt="whatsapp_social_icon">
+                                <img class="footer__links-hover-md" decoding="async" src="./img/social/whatsapp.svg" alt="whatsapp_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://github.com/Father1993">
-                                <img decoding="async" src="./img/social/github.svg" alt="github_social_icon">
+                                <img class="footer__links-hover-md" decoding="async" src="./img/social/github.svg" alt="github_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://www.linkedin.com/in/andrey-spiney/">
-                                <img decoding="async" src="./img/social/linkedin.svg" alt="linkedin_social_icon">
+                                <img class="footer__links-hover-md-last" decoding="async" src="./img/social/linkedin.svg" alt="linkedin_social_icon">
                             </a>
                         </li>
                     </ul>
@@ -364,22 +478,22 @@
                     <ul class="footer__nav d-flex flex-column">
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://t.me/Anri_khv">
-                                <img decoding="async" class="svg" src="./img/social/telegram.svg" alt="telegram_social_icon">
+                                <img  class="footer__links-hover" decoding="async" src="./img/social/telegram.svg" alt="telegram_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://wa.me/79098763797">
-                                <img decoding="async" src="./img/social/whatsapp.svg" alt="whatsapp_social_icon">
+                                <img class="footer__links-hover" decoding="async" src="./img/social/whatsapp.svg" alt="whatsapp_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://github.com/Father1993">
-                                <img decoding="async" src="./img/social/github.svg" alt="github_social_icon">
+                                <img class="footer__links-hover" decoding="async" src="./img/social/github.svg" alt="github_social_icon">
                             </a>
                         </li>
                         <li class="ms-3">
                             <a class="text-muted" target="_blank" href="https://www.linkedin.com/in/andrey-spiney/">
-                                <img decoding="async" src="./img/social/linkedin.svg" alt="linkedin_social_icon">
+                                <img class="footer__links-hover-last" decoding="async" src="./img/social/linkedin.svg" alt="linkedin_social_icon">
                             </a>
                         </li>
                     </ul>
