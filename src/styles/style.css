@@ -47,6 +47,29 @@ a {
     box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
 }
 
+/* Анимация загрузки элементов при скроле */
+.scroll-animation-left {
+    opacity: 0;
+    transform: translateX(-15%);
+    transition: opacity 1s, transform 0.8s;
+}
+
+.scroll-animation-left.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-animation-right {
+    opacity: 0;
+    transform: translateX(+15%);
+    transition: opacity 1s, transform 0.8s;
+}
+
+.scroll-animation-right.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .header__btn {
     padding: 0;
     margin: 0;
