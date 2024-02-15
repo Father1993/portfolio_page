@@ -119,3 +119,26 @@ window.addEventListener('load', handleScrollAnimationLeft);
 // right
 window.addEventListener('scroll', handleScrollAnimationRight);
 window.addEventListener('load', handleScrollAnimationRight);
+
+// Показ карточек по кнопке для блока с проектами
+const showMoreBtn = document.getElementById('showMoreBtn');
+const secondLineCards = document.querySelectorAll('.second-line.d-none');
+const thirdLineCards = document.querySelectorAll('.third-line.d-none')
+
+let showThirdLine = false;
+
+showMoreBtn.addEventListener('click', () => {
+    if (!showThirdLine) {
+        secondLineCards.forEach(card => {
+            card.classList.remove('d-none');
+            card.classList.add('fade-in-animation')
+        });
+    showThirdLine = true;
+    } else {
+        thirdLineCards.forEach(card => {
+            card.classList.remove('d-none');
+            card.classList.add('fade-in-animation')
+        });
+    showMoreBtn.style.display = 'none';
+    }
+});

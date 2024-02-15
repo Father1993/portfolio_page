@@ -1,2 +1,1 @@
-## My portfolio page.
-### https://spinej.ru/
+My portfolio page.

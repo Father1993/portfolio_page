@@ -104,7 +104,9 @@
                 <div class="container hero__container padding__container">
                     <h1 class="hero__title">Hi, my name is</h1>
                     <h2 class="hero__name">Andrej Spinej</h2>
-                    <span class="hero__descr" id="element"></span>
+                    <div class="typing-text">
+                        <span class="hero__descr" id="element"></span>
+                    </div>
                     <p class="hero__about">I&nbsp;am a&nbsp;frontend developer, specializing in&nbsp;creating digital technologies. I&nbsp;am currently focused on&nbsp;creating accessible, human-centered solutions and products.</p>
                 </div>
             </article>
@@ -192,6 +194,7 @@
     
                     <div class="jobs__content row row-cols-1 row-cols-md-1 row-cols-lg-3">
     
+                                                <!-- First line cards-->
                         <div class="col">
                             <div class="card jobs__card">
                                 <div class="card-body">
@@ -207,7 +210,7 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="col">
                             <div class="card jobs__card">
                                 <div class="card-body">
@@ -240,7 +243,8 @@
                             </div>
                         </div>
 
-                        <div class="col scroll-animation-left">
+                        <!-- Second line cards-->
+                        <div class="col second-line d-none">
                             <div class="card jobs__card">
                                 <div class="card-body d-flex flex-column">
                                     <img decoding="async"  class="project__img" src="./img/project/react_app_preview.webp" alt="React-app-preview">
@@ -254,10 +258,9 @@
                                 </div>
                             </div>
                         </div>
-    
-                        
 
-                        <div class="col scroll-animation-left">
+
+                        <div class="col second-line d-none">
                             <div class="card jobs__card">
                                 <div class="card-body d-flex flex-column">
                                     <img decoding="async"  class="project__img" src="./img/project/students-form_preview.webp" alt="memories-game">
@@ -272,7 +275,7 @@
                             </div>
                         </div>
 
-                        <div class="col scroll-animation-left">
+                        <div class="col second-line d-none">
                             <div class="card jobs__card">
                                 <div class="card-body d-flex flex-column">
                                     <img decoding="async"  class="project__img" src="./img/project/time_app_nodejs_preview.webp" alt="docker-app-preview">
@@ -286,9 +289,9 @@
                                 </div>
                             </div>
                         </div>
-                        
 
-                        <div class="col scroll-animation-left">
+                        <!-- Third line cards-->
+                        <div class="col third-line d-none">
                             <div class="card jobs__card">
                                 <div class="card-body d-flex flex-column">
                                     <img decoding="async"  class="project__img" src="./img/project/calc_preview.webp" alt="calculate-app-preview">
@@ -304,9 +307,9 @@
                             </div>
                         </div>
 
-                        
 
-                        <div class="col scroll-animation-left">
+
+                        <div class="col third-line d-none">
                             <div class="card jobs__card">
                                 <div class="card-body d-flex flex-column">
                                     <img decoding="async"  class="project__img" src="./img/project/todo_preview.webp" alt="todo-app-preview">
@@ -321,7 +324,7 @@
                             </div>
                         </div>
 
-                        <div class="col scroll-animation-left">
+                        <div class="col third-line d-none">
                             <div class="card jobs__card">
                                 <div class="card-body d-flex flex-column">
                                     <img decoding="async"  class="project__img" src="./img/project/perevozka27_preview.webp" alt="wordpress-sites">
@@ -336,7 +339,12 @@
                                 </div>
                             </div>
                         </div>
+                        </div>
+
+                    <div class="text-center">
+                        <button id="showMoreBtn" class="show-more-btn">Show more</button>
                     </div>
+
                 </div>
 
             <div class="jobs__github text-center">

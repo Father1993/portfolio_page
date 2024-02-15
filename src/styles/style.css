@@ -71,6 +71,28 @@ a {
     transform: translateX(0);
 }
 
+/* Скрытые карточки проектов */
+.d-none {
+    display: none !important;
+}
+
+/* Анимация появления  */
+@keyframes fadeInAni {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-animation {
+    animation: fadeInAni 1.7s;
+}
+
+
 .header__btn {
     padding: 0;
     margin: 0;
@@ -161,6 +183,10 @@ a {
 
 .hero__descr {
     color: #ffc107;
+}
+
+.typing-text {
+    height: 50px;
 }
 
 .hero__about {
@@ -317,6 +343,16 @@ a {
 
 .card__wrapper {
     height: 250px;
+}
+
+.show-more-btn {
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #64ff7e;
+    border-radius: 15px;
+    background-color: transparent;
+    font-family: 'TeXGyreCursor', Courier, monospace;
+    color: whitesmoke;
+    margin-bottom: 130px;
 }
 
 .top-card {
@@ -490,7 +526,7 @@ a {
 }
 
 .jobs__content {
-    margin-bottom: 77px;
+    margin-bottom: 70px;
 }
 
 .card__wrapper {

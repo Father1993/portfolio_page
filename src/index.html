@@ -52,7 +52,7 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
 
-
+    <!-- Scripts -->
     <script defer src="./js/bootstrap/bootstrap.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src='//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'></script>
@@ -104,8 +104,10 @@
                 <div class="container hero__container padding__container">
                     <h1 class="hero__title">Привет, меня зовут</h1>
                     <h2 class="hero__name">Андрей Спиней</h2>
-                    <span class="hero__descr" id="element"></span>
-                    <p class="hero__about">Я frontend разработчик, специализируюсь на создании цифровых технологий. В настоящее время я сосредоточен на создании доступных, ориентированных на человека решений и продуктов.</p>
+                    <div class="typing-text">
+                        <span class="hero__descr" id="element"></span>
+                    </div>
+                    <p class="hero__about">Я web разработчик, специализируюсь на создании цифровых технологий. В настоящее время я сосредоточен на создании доступных, ориентированных на человека решений и продуктов.</p>
                 </div>
             </article>
     
@@ -191,8 +193,9 @@
                 <div class="container padding__container wrapper-margin scroll-animation-left">
                     <h2 class="jobs__title margin__text">Проекты</h2>
     
-                    <div class="jobs__content row row-cols-1 row-cols-md-1 row-cols-lg-3">
-    
+                    <div id="jobs__content" class="jobs__content row row-cols-1 row-cols-md-1 row-cols-lg-3">
+                        
+                        <!-- First line cards-->
                         <div class="col">
                             <div class="card jobs__card">
                                 <div class="card-body">
@@ -241,7 +244,8 @@
                             </div>
                         </div>
 
-                        <div class="col scroll-animation-left">
+                        <!-- Second line cards-->
+                        <div class="col second-line d-none">
                             <div class="card jobs__card">
                                 <div class="card-body d-flex flex-column">
                                     <img decoding="async"  class="project__img" src="./img/project/react_app_preview.webp" alt="React-app-preview">
@@ -256,15 +260,14 @@
                             </div>
                         </div>
     
-                        
 
-                        <div class="col scroll-animation-left">
+                        <div class="col second-line d-none">
                             <div class="card jobs__card">
                                 <div class="card-body d-flex flex-column">
                                     <img decoding="async"  class="project__img" src="./img/project/students-form_preview.webp" alt="memories-game">
                                     <div class="card__wrapper last-card">
                                         <h5 class="card-title">Приложение для управления данными студентов</h5>
-                                        <p class="card-text">Практика создания простого сервера на&nbsp;HTTP, с&nbsp;обработкой GET, POST запросов. Также практика с&nbsp;npm, Express, dotenv и&nbsp;стандартными модулями Node.JS: путь, http, fs, события, поток.</p>
+                                        <p class="card-text">Практика создания простого сервера на&nbsp;HTTP, с&nbsp;обработкой GET, POST запросов. Также практика с&nbsp;npm, Express, dotenv и&nbsp;стандартными модулями Node.JS: path, http, fs, event.</p>
                                     </div>
                                     <div class="project__link">
                                         <a class="card-link project__link-code d-flex" href="https://github.com/Father1993/Vanila-JS-Forms-Filter-Render" target="_blank">View Code</a>
@@ -273,7 +276,7 @@
                             </div>
                         </div>
 
-                        <div class="col scroll-animation-left">
+                        <div class="col second-line d-none">
                             <div class="card jobs__card">
                                 <div class="card-body d-flex flex-column">
                                     <img decoding="async"  class="project__img" src="./img/project/time_app_nodejs_preview.webp" alt="docker-app-preview">
@@ -288,8 +291,8 @@
                             </div>
                         </div>
                         
-
-                        <div class="col scroll-animation-left">
+                        <!-- Third line cards-->
+                        <div class="col third-line d-none">
                             <div class="card jobs__card">
                                 <div class="card-body d-flex flex-column">
                                     <img decoding="async"  class="project__img" src="./img/project/calc_preview.webp" alt="calculate-app-preview">
@@ -307,7 +310,7 @@
 
                         
 
-                        <div class="col scroll-animation-left">
+                        <div class="col third-line d-none">
                             <div class="card jobs__card">
                                 <div class="card-body d-flex flex-column">
                                     <img decoding="async"  class="project__img" src="./img/project/todo_preview.webp" alt="todo-app-preview">
@@ -322,7 +325,7 @@
                             </div>
                         </div>
 
-                        <div class="col scroll-animation-left">
+                        <div class="col third-line d-none">
                             <div class="card jobs__card">
                                 <div class="card-body d-flex flex-column">
                                     <img decoding="async"  class="project__img" src="./img/project/perevozka27_preview.webp" alt="wordpress-sites">
@@ -337,6 +340,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button id="showMoreBtn" class="show-more-btn">Показать еще</button>
                     </div>
                 </div>
 
