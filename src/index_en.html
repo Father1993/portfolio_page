@@ -1,375 +1,1172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <title>Andrej Spinej</title>
-    
+
         <!-- Favicons -->
-    
+
         <!-- Desktop (ico) -->
-        <link rel="icon" type="image/ico" href="./img/favicon/favicon.ico">
+        <link rel="icon" type="image/ico" href="./img/favicon/favicon.ico" />
         <!-- Desktop (png) -->
-        <link rel="icon" type="image/png" href="./img/favicon/favicon.png">
+        <link rel="icon" type="image/png" href="./img/favicon/favicon.png" />
         <!-- Apple -->
-        <link rel="apple-touch-icon" href="./img/favicon/apple-touch-favicon.png">
+        <link
+            rel="apple-touch-icon"
+            href="./img/favicon/apple-touch-favicon.png"
+        />
         <!-- Safari -->
         <link rel=”mask-icon” href=”./img/favicon/icon.svg”>
-    
-        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./img/favicon/site.webmanifest">
-        <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#00aba9">
-        <meta name="theme-color" content="#ffffff">
-    
+
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./img/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./img/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./img/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./img/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./img/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#00aba9" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <meta property="og:title" content="Andrej Spinej Website" />
+        <meta property="og:description" content="Portfolio" />
+        <meta property="og:image" content="./img/assets/logo-website.png" />
+        <meta property="og:url" content="https://spinej.ru" />
+
         <!-- Descriptions -->
-        <meta name="description" content="Сайт портфолио">
-        <meta name="keywords" content="портфолио, Хабаровск, frontend, программист, разработчик, full-stack, backend">
-        <meta name="author" content="Andrej Spinej">
-        <meta name="robots" content="index, follow">
-        <meta name="language" content="ru, en">
-        <meta name="theme-color" content="dark">
-        <meta name="og:title" content="Andrej Spinej">
-        <meta name="og:description" content="Сайт портфолио">
-        <meta name="og:image" content="./img/assets/logo-website.png">
-        <meta name="og:url" content="https://spinej.com">
-    
+        <meta name="description" content="Portfolio site" />
+        <meta
+            name="keywords"
+            content="Portfolio, Khabarovsk, fronted-developer, programmer, developer, full-stack, backend"
+        />
+        <meta name="author" content="Andrej Spinej" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="ru, en" />
+        <meta name="theme-color" content="dark" />
+        <meta name="og:title" content="Andrej Spinej" />
+        <meta name="og:description" content="Portfolio site" />
+        <meta name="og:image" content="./img/assets/logo-website.png" />
+        <meta name="og:url" content="https://spinej.com" />
+
         <!-- Fonts -->
-        <link rel="stylesheet" href="./styles/fonts/stylesheet.css">
-    
+        <link rel="stylesheet" href="./styles/fonts/stylesheet.css" />
+
         <!-- Vendor CSS Files -->
-        <link rel="stylesheet" href="./styles/bootstrap/bootstrap.css">
-        
+        <link rel="stylesheet" href="./styles/bootstrap/bootstrap.css" />
+
         <!-- Template Main CSS File -->
-        <link rel="stylesheet" href="./styles/normalize.css">
-        <link rel="stylesheet" href="./styles/style.css">
-    
-    
-        <script src="./js/bootstrap/bootstrap.js"></script>
+        <link rel="stylesheet" href="./styles/normalize.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+
+        <script defer src="./js/bootstrap/bootstrap.min.js"></script>
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <script src='//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'></script>
-        
-        
-</head>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    </head>
 
-<body id="playpen">
-    <div class="header-b">
-        <header class=" p-3 text-white">
-            <div class="container">
-                <div class="header d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-    
-                    <a href="index.html" class="p-0 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                    <img decoding="async" src="./img/assets/logo-website.png" alt="logo" width="200px" style="margin-right: 30px">
-                    </a>
-    
-                    <div class="col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                        <!-- Кнопки выбора языка -->
-                        <div>
-                            <a class="header__btn rus btn btn-outline-light" href="./index.html">RU</a></button>
-                            <a class="header__btn eng btn btn-outline-light" style="background-color: #00c26a" href="./index_en.html">EN</a></button>
-                        </div>
+    <body id="playpen">
+        <div class="header-b">
+            <header class="p-3 text-white">
+                <div class="container">
+                    <div
+                        class="header d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+                    >
+                        <a
+                            href="index.html"
+                            class="p-0 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+                        >
+                            <img
+                                decoding="async"
+                                src="./img/assets/logo-website.webp"
+                                alt="logo-green"
+                                class="header__logo"
+                            />
+                        </a>
 
-                        <!-- Кнопки смены темы -->
-                        <!-- <button type="button" class="btn btn-warning">Theme</button> -->
+                        <a
+                            href="index.html"
+                            class="p-0 d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+                        >
+                            <img
+                                decoding="async"
+                                src="./img/assets/logo-website__orange.webp"
+                                alt="logo-orange"
+                                class="header__logo header__logo-orange"
+                            />
+                        </a>
 
-                    </div>    
-    
-                    <ul class="nav text-end">
-                        <li><a href="#about-me" class="header__nav-link nav-link px-2 text-secondary">About me</a></li>
-                        <li><a href="#skills" class="header__nav-link nav-link px-2 text-white">Skills</a></li>
-                        <li><a href="#project" class="header__nav-link nav-link px-2 text-white">Projects</a></li>
-                        <li><a href="#experience" class="header__nav-link nav-link px-2 text-white">Experience</a></li>
-                        <li><a href="#contact" class="header__nav-link nav-link px-2 text-white">Contacts</a></li>
-                    </ul>
-        
-                </div>
-            </div>
-        </header>
-    
-        <main>
-            <article class="hero">
-                <div class="container hero__container padding__container">
-                    <h1 class="hero__title">Hi, my name is</h1>
-                    <h2 class="hero__name">Andrej Spinej</h2>
-                    <span class="hero__descr" id="element"></span>
-                    <p class="hero__about">I&nbsp;am a&nbsp;frontend developer, specializing in&nbsp;creating digital technologies. I&nbsp;am currently focused on&nbsp;creating accessible, human-centered solutions and products.</p>
-                </div>
-            </article>
-    
-            <section class="about">
-                <div class="container padding__container">
-                    <div class="about__title">
-    
-                        <h2 class="about__us margin__text">About me</h2>
-                        <div class="row col about__container">
-                            <div class="about__block col" id="about-me">
-                                <div class="block__info">
-                                    <p>I&nbsp;like to&nbsp;create things that live on&nbsp;the Internet. My&nbsp;interest in&nbsp;web development began back in&nbsp;2020, when&nbsp;I decided to&nbsp;try creating a&nbsp;website. And it&nbsp;turns out that even creating a&nbsp;custom button taught me&nbsp;a&nbsp;lot about HTML and CSS!</p>
-                                    <p>Fast forward to&nbsp;today: I&nbsp;was lucky enough to&nbsp;work in&nbsp;an&nbsp;advertising agency, a&nbsp;small company selling goods with its own website where&nbsp;I was a&nbsp;Frontend developer. Currently I&rsquo;m focused on&nbsp;creating accessible, inclusive products for a&nbsp;diverse customer base.</p>
-                                    <p>I&nbsp;spent a&nbsp;lot of&nbsp;time promoting websites online, I&nbsp;know semantic layout, and I&rsquo;m familiar with technical SEO. I&nbsp;know how to&nbsp;set up&nbsp;and publish a&nbsp;project on&nbsp;a&nbsp;server.</p>
-                                    <p>I&nbsp;also continue to&nbsp;study new technologies that will be&nbsp;useful to&nbsp;me&nbsp;in&nbsp;my&nbsp;work. Currently studying React, Node.js, TypeScript.</p>
-                                    <p>Here are a&nbsp;few technologies I&rsquo;ve been working with lately:</p>
-                                </div>
-                                <ul class="about__skills">
-                                    <li class="about__list">JavaScript</li>
-                                    <li class="about__list">React</li>
-                                    <li class="about__list">NodeJS</li>
-                                    <li class="about__list">Express</li>
-                                    <li class="about__list">Git</li>
-                                    <li class="about__list">Docker</li>
-                                </ul>
-                            </div>
-        
-                            <div class="about__photo col">
-                                <img
-                                    decoding="async"
-                                    class="photo__card"
-                                    src="./assets/img/my-1280.webp"
-                                    srcset="
-                                    ./img/assets/my-480.webp 480w,
-                                    ./img/assets/my-768.webp 768w,
-                                    ./img/assets/my-1280.webp 1280w
-                                "
-                                    sizes="(max-width: 480px) 480px,
-                                            (max-width: 768px) 768px,
-                                            1280px"
-                                    alt="Andrej Spinejw"
+                        <div
+                            class="header__button-wrapper col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+                        >
+                            <!-- Кнопки выбора языка -->
+                            <div class="header__lang-wrapper">
+                                <a
+                                    class="header__btn rus btn btn-outline-light"
+                                    href="./index.html"
+                                    >RU</a
+                                >
+                                <a
+                                    class="header__btn eng btn btn-outline-light"
+                                    style="background-color: #00c26a"
+                                    href="./index_en.html"
+                                    >EN</a
                                 >
                             </div>
+
+                            <!-- Кнопки смены темы -->
+                            <!-- <button type="button" class="btn btn-warning">Theme</button> -->
                         </div>
+
+                        <ul class="nav text-end">
+                            <li>
+                                <a
+                                    href="#about-me"
+                                    class="header__nav-link nav-link px-2 text-secondary"
+                                    >About me</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#skills"
+                                    class="header__nav-link nav-link px-2 text-white"
+                                    >Skills</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#project"
+                                    class="header__nav-link nav-link px-2 text-white"
+                                    >Projects</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#experience"
+                                    class="header__nav-link nav-link px-2 text-white"
+                                    >Experience</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#contact"
+                                    class="header__nav-link nav-link px-2 text-white"
+                                    >Contacts</a
+                                >
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </section>
-    
-            <section class="skills" id="skills">
-                <div class="container padding__container">
-                    <div class="row">
-    
-                        <h2 class="skills__title margin__text">Skills</h2>
-                        <h3 class="skills__description">Skills, tools and technologies that I&nbsp;am proficient&nbsp;in:</h3>
-                        <div class="skills__block">
-    
-                            <ul class="skills__list">
-                                <li><img decoding="async" class="skills__icon" src="./img/tech/js.png" alt="JS_icon">JavaScript</li>
-                                <li><img decoding="async" class="skills__icon" src="./img/tech/react.png" alt="React_icon">React</li>
-                                <li><img decoding="async" class="skills__icon" src="./img/tech/node.png" alt="Node_icon">Node.js</li>
-                                <li><img decoding="async" class="skills__icon" src="./img/tech/docker.png" alt="Docker_icon">Docker</li>
-                                <li><img decoding="async" class="skills__icon" src="./img/tech/html.png" alt="HTML_icon">HTML</li>
-                                <li><img decoding="async" class="skills__icon" src="./img/tech/css.png" alt="CSS_icon">CSS</li>
-                                <li><img decoding="async" class="skills__icon" src="./img/tech/php.png" alt="PHP_icon">PHP</li>
-                                <li><img decoding="async" class="skills__icon" src="./img/tech/python.png" alt="Python_icon">Python</li>
-                                <li><img decoding="async" class="skills__icon" src="./img/tech/sql.png" alt="SQL_icon">SQL</li>
-                                <li><img decoding="async" class="skills__icon" src="./img/tech/bootstap.png" alt="Bootstrap_icon">Bootstrap</li>
-                                <li><img decoding="async" class="skills__icon" src="./img/tech/wordpress.png" alt="WordPress_icon">WordPress</li>
-                                <li><img decoding="async" class="skills__icon" src="./img/tech/git.png" alt="Git_icon">Git</li>
-                                <li><img decoding="async" class="skills__icon" src="./img/tech/npm.png" alt="NPM_icon">npm</li>
-                                <li><img decoding="async" class="skills__icon" src="./img/tech/bash.png" alt="Bash_icon">bash</li>
-                                <li><img decoding="async" class="skills__icon" src="./img/tech/linux.png" alt="Linux_icon">Linux</li>
-                            </ul>
+            </header>
+
+            <main>
+                <article class="hero">
+                    <div class="container hero__container padding__container">
+                        <h1 class="hero__title">Hi, my name is</h1>
+                        <h2 class="hero__name">Andrej Spinej</h2>
+                        <div class="typing-text">
+                            <span class="hero__descr" id="element"></span>
+                        </div>
+                        <p class="hero__about">
+                            I&nbsp;am a&nbsp;frontend developer, specializing
+                            in&nbsp;creating digital technologies. I&nbsp;am
+                            currently focused on&nbsp;creating accessible,
+                            human-centered solutions and products.
+                        </p>
+                    </div>
+                </article>
+
+                <section class="about">
+                    <div class="about__wrapper container padding__container">
+                        <div class="about__title scroll-animation-left">
+                            <h2 class="about__us margin__text">About me</h2>
+                            <div class="about__container">
+                                <div class="about__block" id="about-me">
+                                    <div class="block__info">
+                                        <p>
+                                            I&nbsp;like to&nbsp;create things
+                                            that live on&nbsp;the Internet.
+                                            My&nbsp;interest in&nbsp;web
+                                            development began back in&nbsp;2020,
+                                            when&nbsp;I decided to&nbsp;try
+                                            creating a&nbsp;website. And
+                                            it&nbsp;turns out that even creating
+                                            a&nbsp;custom button taught
+                                            me&nbsp;a&nbsp;lot about HTML and
+                                            CSS!
+                                        </p>
+                                        <p>
+                                            Fast forward to&nbsp;today:
+                                            I&nbsp;was lucky enough to&nbsp;work
+                                            in&nbsp;an&nbsp;advertising agency,
+                                            a&nbsp;small company selling goods
+                                            with its own website where&nbsp;I
+                                            was a&nbsp;Frontend developer.
+                                            Currently I&rsquo;m focused
+                                            on&nbsp;creating accessible,
+                                            inclusive products for
+                                            a&nbsp;diverse customer base.
+                                        </p>
+                                        <p>
+                                            I&nbsp;spent a&nbsp;lot of&nbsp;time
+                                            promoting websites online,
+                                            I&nbsp;know semantic layout, and
+                                            I&rsquo;m familiar with technical
+                                            SEO. I&nbsp;know how to&nbsp;set
+                                            up&nbsp;and publish a&nbsp;project
+                                            on&nbsp;a&nbsp;server.
+                                        </p>
+                                        <p>
+                                            I&nbsp;also continue to&nbsp;study
+                                            new technologies that will
+                                            be&nbsp;useful
+                                            to&nbsp;me&nbsp;in&nbsp;my&nbsp;work.
+                                            Currently studying React, Node.js,
+                                            TypeScript.
+                                        </p>
+                                        <p>
+                                            Here are a&nbsp;few technologies
+                                            I&rsquo;ve been working with lately:
+                                        </p>
+                                    </div>
+                                    <div class="about__skills-wrapper">
+                                        <ul class="about__skills">
+                                            <li class="about__list">
+                                                JavaScript
+                                            </li>
+                                            <li class="about__list">React</li>
+                                            <li class="about__list">NodeJS</li>
+                                            <li class="about__list">Express</li>
+                                            <li class="about__list">Redux</li>
+                                            <li class="about__list">Docker</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="about__photo">
+                                    <img
+                                        decoding="async"
+                                        class="photo__card"
+                                        src="./assets/img/my-1280.webp"
+                                        srcset="
+                                            ./img/assets/my-480.webp   480w,
+                                            ./img/assets/my-768.webp   768w,
+                                            ./img/assets/my-1280.webp 1280w
+                                        "
+                                        sizes="(max-width: 480px) 480px,
+                                            (max-width: 768px) 768px,
+                                            1280px"
+                                        alt="Andrej Spinej"
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-    
-            <section class="jobs" id="project">
-                <div class="container padding__container">
-                    <h2 class="jobs__title margin__text">Projects</h2>
-    
-                    <div class="jobs__descr">
-                        <h4 class="text-center m-5">Latest projects</h4>
+                </section>
+
+                <section class="skills" id="skills">
+                    <div
+                        class="skills__wrapper container scroll-animation-right"
+                    >
+                        <div class="row">
+                            <h2 class="skills__title margin__text">Skills</h2>
+                            <h3 class="skills__description">
+                                Skills, tools and technologies that I&nbsp;am
+                                proficient&nbsp;in:
+                            </h3>
+                            <div class="skills__block">
+                                <ul class="skills__list">
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/js.webp"
+                                            alt="JS_icon"
+                                        />JavaScript
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/react.webp"
+                                            alt="React_icon"
+                                        />React
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/node.webp"
+                                            alt="Node_icon"
+                                        />Node.js
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/docker.webp"
+                                            alt="Docker_icon"
+                                        />Docker
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/html.webp"
+                                            alt="HTML_icon"
+                                        />HTML
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/css.webp"
+                                            alt="CSS_icon"
+                                        />CSS
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/php.webp"
+                                            alt="PHP_icon"
+                                        />PHP
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/python.webp"
+                                            alt="Python_icon"
+                                        />Python
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/redux.webp"
+                                            alt="Redux_icon"
+                                        />Redux
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/sql.webp"
+                                            alt="SQL_icon"
+                                        />SQL
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/bootstap.webp"
+                                            alt="Bootstrap_icon"
+                                        />Bootstrap
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/wordpress.webp"
+                                            alt="WordPress_icon"
+                                        />WordPress
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/git.webp"
+                                            alt="Git_icon"
+                                        />Git
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/npm.webp"
+                                            alt="NPM_icon"
+                                        />npm
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/bash.webp"
+                                            alt="Bash_icon"
+                                        />bash
+                                    </li>
+                                    <li>
+                                        <img
+                                            decoding="async"
+                                            class="skills__icon"
+                                            src="./img/tech/linux.webp"
+                                            alt="Linux_icon"
+                                        />Linux
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-    
-                    <div class="jobs__content row row-cols-1 row-cols-md-1 row-cols-lg-3">
-    
-                        <div class="col">
-                            <div class="card jobs__card">
+                </section>
+                <section class="jobs" id="project">
+                    <div
+                        class="container padding__container wrapper-margin scroll-animation-left"
+                    >
+                        <h2 class="jobs__title margin__text">Projects</h2>
+                        <div class="project-container">
+                            <div class="project-first-line">
                                 <div class="card-body">
-                                    <img decoding="async" class="project__img" src="./img/project/xinros_preview.jpg" alt="xinroshh-site">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/tigai_preview.webp"
+                                        alt="todo-app-preview"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">
+                                            Fitness Trainer - React Web App
+                                        </h5>
+                                        <p class="card-text special-text">
+                                            This is a responsive web
+                                            application. All reusable
+                                            components. IN the project uses
+                                            framer-motion, library for creating
+                                            animations in React. To implement
+                                            smooth page scrolling is used
+                                            react-scroll. Sending functionality
+                                            requests are implemented using
+                                            emailjs. React-helmet for SEO
+                                            optimization.
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-preview d-flex"
+                                            href="https://tigay.ru/"
+                                            target="_blank"
+                                            >Live Preview</a
+                                        >
+                                        <a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/Aleksey-Tigay-website"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/store_app.webp"
+                                        alt="todo-app-preview"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">
+                                            Online store using React
+                                        </h5>
+                                        <p class="card-text">
+                                            Includes various functions,
+                                            displaying a list of products,
+                                            filtering products by brand, price
+                                            and title, page navigation and
+                                            button to scroll the page up. Data
+                                            is loaded and filtered through API
+                                            requests.
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-preview d-flex"
+                                            href="https://main--somestorespinej.netlify.app/"
+                                            target="_blank"
+                                            >Live Preview</a
+                                        >
+                                        <a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/Online-jewelry-store-via-API"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/xinros_preview.webp"
+                                        alt="xinroshh-site-preview"
+                                    />
                                     <div class="card__wrapper">
                                         <h5 class="card-title">Xinrosh</h5>
-                                        <p class="card-text">Landing page of&nbsp;a&nbsp;company for parallel import of&nbsp;spare parts for special equipment in&nbsp;the Russian Federation.</p>
+                                        <p class="card-text">
+                                            Landing page of the company by
+                                            parallel import of spare parts and
+                                            special equipment.
+                                        </p>
                                     </div>
                                     <div class="project__link">
-                                        <a class="project__link-preview d-flex" href="#" target="_blank" class="card-link">Live Preview</a>
-                                        <a class="project__link-code d-flex" href="#" target="_blank" class="card-link">View Code</a>
+                                        <a
+                                            class="card-link project__link-preview d-flex"
+                                            href="#"
+                                            target="_blank"
+                                            >Live Preview</a
+                                        >
+                                        <a
+                                            class="card-link project__link-code d-flex"
+                                            href="#"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
                                     </div>
                                 </div>
                             </div>
-                        </div>
-    
-                        <div class="col">
-                            <div class="card jobs__card">
+
+                            <div class="project-second-line d-none">
                                 <div class="card-body">
-                                    <img decoding="async" class="project__img" src="./img/project/beats_preview.jpeg" alt="beats_studio">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/lib_app.webp"
+                                        alt="lib_app-preview"
+                                    />
                                     <div class="card__wrapper">
-                                        <h5 class="card-title">Beats Studio Buds</h5>
-                                        <p class="card-text">Freelance project: advertising page for Beats Studio headphones.</p>
+                                        <h5 class="card-title">
+                                            Books Library App
+                                        </h5>
+                                        <p class="card-text">
+                                            A React web application that allows
+                                            users to manage your library. The
+                                            project has API using Express
+                                        </p>
                                     </div>
                                     <div class="project__link">
-                                        <a class="project__link-preview d-flex" href="https://symphonious-crumble-38f551.netlify.app/" target="_blank" class="card-link">Live Preview</a>
-                                        <a class="project__link-code d-flex" href="https://github.com/Father1993/Beats-Studio-Buds-" target="_blank" class="card-link">View Code</a>
+                                        <a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/Books-Library-App"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/beats_preview.webp"
+                                        alt="beats_studio-preview"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">
+                                            Beats Studio Buds
+                                        </h5>
+                                        <p class="card-text">
+                                            Freelance project: advertising page
+                                            for Beats Studio headphones.
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-preview d-flex"
+                                            href="https://symphonious-crumble-38f551.netlify.app/"
+                                            target="_blank"
+                                            >Live Preview</a
+                                        >
+                                        <a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/Beats-Studio-Buds-"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/plumber_preview.webp"
+                                        alt="todo-app-preview"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">
+                                            Landing page- Plumbing work
+                                        </h5>
+                                        <p class="card-text">
+                                            Website of the company providing
+                                            plumbing services. Website developed
+                                            using HTML, CSS, JS and Bootstrap.
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-preview d-flex"
+                                            href="https://plumkhv.netlify.app/"
+                                            target="_blank"
+                                            >Live Preview</a
+                                        >
+                                        <a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/Plumber-regional-site"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-third-line d-none">
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/perevozka27_preview.webp"
+                                        alt="wordpress-sites"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">WordPress</h5>
+                                        <p class="card-text">
+                                            There are several sites written in
+                                            WordPress in production.<br />
+                                            Simple landing page for locals firms
+                                            Made with WordPress
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-preview spec-links d-flex"
+                                            href="https://perevozka27.ru/"
+                                            target="_blank"
+                                            >perevozka27.ru</a
+                                        >
+                                        <a
+                                            class="card-link project__link-preview spec-links d-flex"
+                                            href="https://xn--90anbgibdchfetk.xn--p1ai/"
+                                            target="_blank"
+                                            >помнимскорбим.рф</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/students-form_preview.webp"
+                                        alt="memories-game"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">
+                                            Data Management Application students
+                                        </h5>
+                                        <p class="card-text">
+                                            Practice of creating a simple server
+                                            on&nbsp;HTTP, with&nbsp;GET
+                                            processing, POST requests. Also
+                                            practice with&nbsp;npm, Express,
+                                            dotenv and&nbsp;standard modules
+                                            Node.JS: path, http, fs, event.
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/Vanila-JS-Forms-Filter-Render"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/react_app_preview.webp"
+                                        alt="React-app-preview"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">React app</h5>
+                                        <p class="card-text special-text">
+                                            API requests to the server for
+                                            getting a list of posts. There is a
+                                            personal cabinet, custom hooks for
+                                            improved functionality, and&nbsp;a
+                                            form for creating posts. Has a
+                                            filtering function and&nbsp;sorting
+                                            posts, and also page-by-page
+                                            pagination. Implemented infinite
+                                            function scroll made through
+                                            invisible block that allows you to
+                                            load data partially via API. The
+                                            application provides animation
+                                            downloads upon request to the
+                                            server, making the wait more
+                                            enjoyable. Each post can be opened
+                                            or delete separately.
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/React_app_practice/tree/master"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-fourth-line d-none">
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/time_app_nodejs_preview.webp"
+                                        alt="docker-app-preview"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">
+                                            Docker in a project with an API
+                                            server on NodeJS + Express
+                                        </h5>
+                                        <p class="card-text">
+                                            The Time app consists of
+                                            from&nbsp;frontend- and&nbsp;backend
+                                            parts. Frontend written using a
+                                            framework Vue.js. The backend is
+                                            written with&nbsp;using Node.js
+                                            and&nbsp;Express. Base
+                                            data&nbsp;&mdash; MySQL
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/Docker-full-practice"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/vanilla_js_preview.webp"
+                                        alt="memories-game-preview"
+                                    />
+                                    <div class="card__wrapper last-card">
+                                        <h5 class="card-title">
+                                            Vanilla JS game
+                                        </h5>
+                                        <p class="card-text">
+                                            Written in native JavaScript.
+                                            setTimeout, animation in CSS.
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-preview d-flex"
+                                            href="https://65c60a3cd060d29373d059d2--fascinating-quokka-0f8f87.netlify.app/"
+                                            target="_blank"
+                                            >Live Preview</a
+                                        >
+                                        <a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/MemoryGameJS/tree/main"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <img
+                                        decoding="async"
+                                        class="project__img"
+                                        src="./img/project/calc_preview.webp"
+                                        alt="calculate-app-preview"
+                                    />
+                                    <div class="card__wrapper">
+                                        <h5 class="card-title">
+                                            Car cost calculator to order
+                                        </h5>
+                                        <p class="card-text">
+                                            The calculator can calculate as cars
+                                            from&nbsp;Japan, so and&nbsp;cars
+                                            from&nbsp;Southern Korea. And it can
+                                            also calculate your bet in yen,
+                                            based on from&nbsp;your budget (for
+                                            independent car purchase from
+                                            Japanese auctions)
+                                        </p>
+                                    </div>
+                                    <div class="project__link">
+                                        <a
+                                            class="card-link project__link-code d-flex"
+                                            href="https://github.com/Father1993/Foreign-car-buying-calculator"
+                                            target="_blank"
+                                            >View Code</a
+                                        >
                                     </div>
                                 </div>
                             </div>
                         </div>
-    
-                        <div class="col">
-                            <div class="card jobs__card">
-                                <div class="card-body d-flex flex-column">
-                                    <img decoding="async"  class="project__img" src="./img/project/vanilla_js_preview.jpeg" alt="memories-game">
-                                    <div class="card__wrapper">
-                                        <h5 class="card-title">Vanilla JS game</h5>
-                                        <p class="card-text">Written in&nbsp;pure JavaScript. Practice event Loop, setTimeout() + animation in&nbsp;CSS.</p>
+
+                        <div class="text-center">
+                            <button id="showMoreBtn" class="show-more-btn">
+                                Show more
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="jobs__github text-center">
+                        <a
+                            class="jobs__btn btn btn-success jobs__link"
+                            href="https://github.com/Father1993"
+                            target="_blank"
+                            >More projects on GitHub</a
+                        >
+                    </div>
+                </section>
+
+                <section class="work" id="experience">
+                    <div
+                        class="container padding__container wrapper-margin scroll-animation-right"
+                    >
+                        <h2 class="work__title margin__text">Experience</h2>
+
+                        <div class="work__desc">
+                            <h4>
+                                Here is a quick summary of my most recent
+                                experiences
+                            </h4>
+                        </div>
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button
+                                        class="accordion-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne"
+                                        aria-expanded="true"
+                                        aria-controls="collapseOne"
+                                    >
+                                        <strong
+                                            >Frontend-разработчик @
+                                            Металлрезерв</strong
+                                        >
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseOne"
+                                    class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            • He created and added elements and
+                                            blocks, layout of the site and
+                                            advertising landing, editing to
+                                            production, added new functionality
+                                            to the site.<br />
+                                            • SEO Optimization, Direct Settings,
+                                            Metric Analysis.<br />
+                                            • Creation of advertising content in
+                                            graphic editors.<br />
+                                            • Analytics of demand.<br />
+                                            • SMM conducted social networks and
+                                            accounts on trading floors.
+                                        </p>
+                                        <button>JavaScript</button>
+                                        <button>PHP</button>
+                                        <button>HTML</button>
+                                        <button>Dev0ps</button>
+                                        <button>Bootstrap</button>
+                                        <button>SQL</button>
+                                        <button>WordPress</button>
+                                        <button>SEO</button>
+                                        <button>Webpack</button>
+                                        <button>Linux</button>
                                     </div>
-                                    <div class="project__link">
-                                        <a class="project__link-preview d-flex" href="https://65c60a3cd060d29373d059d2--fascinating-quokka-0f8f87.netlify.app/" target="_blank" class="card-link">Live Preview</a>
-                                        <a class="project__link-code d-flex" href="https://github.com/Father1993/MemoryGameJS/tree/main" target="_blank" class="card-link">View Code</a>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="collapseTwo"
+                                    >
+                                        <strong
+                                            >Администратор сайта @
+                                            AutoTokyo</strong
+                                        >
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseTwo"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            • Verska site, multidional Makemam
+                                            site and without, WordPress,
+                                            1C-bitix, PHP, SEO.<br />
+                                            • Debaging, working with someone
+                                            else's code, amplification.<br />
+                                            • SMM, administration- Telegram,
+                                            YouTube, VK, Zen. <br />
+                                            • Site administration.Advertising
+                                            and promotion.<br />
+                                            • Working with clients, processing
+                                            applications, communication in
+                                            messengers, presentation, conclusion
+                                            of transactions, CRM, expansion of
+                                            the client base.<br />
+                                            • Technical support<br />
+                                        </p>
+                                        <button>JavaScript</button>
+                                        <button>Python</button>
+                                        <button>HTML</button>
+                                        <button>WordPress</button>
+                                        <button>SEO</button>
+                                        <button>Soft skills</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree"
+                                        aria-expanded="false"
+                                        aria-controls="collapseThree"
+                                    >
+                                        <strong
+                                            >Computers repair master @
+                                            SV-service</strong
+                                        >
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseThree"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body">
+                                        <p>
+                                            • Departure to the client,
+                                            installation of the OS, by.<br />
+                                            • Equipment setup.<br />
+                                            • Repair of technology smartphones,
+                                            PCs, laptops, TVs.<br />
+                                            • Cleaning, simple soldering,
+                                            diagnosis.<br />
+                                        </p>
+                                        <button>Soft skills</button>
+                                        <button>
+                                            Communication and sales skills
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                </div>
-                <div class="jobs__github text-center">
-                    <button class="jobs__btn btn btn-success"> 
-                        <a class="jobs__link" href="https://github.com/Father1993" target="_blank">GitHub profile</a>
-                    </button>
-                </div>
-                
-            </section>
-    
-            <section class="work" id="experience">
-                <div class="container padding__container">
-    
-                    <h2 class="work__title margin__text">Experience</h2>
-    
-                    <div class="work__desc">
-                        <h4>Here is a quick summary of my most recent experiences</h4>
                     </div>
+                </section>
 
-                    
-    
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <strong>Frontend developer @ Metalrezerv</strong>
-                            </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                    <p>
-                                        Developed and finalized more than one company website, layout, edits, SEO optimization, SQL queries, setting up&nbsp;Yandex Direct and YAN, metrics, creating advertising content in&nbsp;graphic editors, demand analytics, SMM, administration of&nbsp;social networks and accounts on&nbsp;trading platforms.
-                                    </p>
-                                    <button>JavaScript</button>
-                                    <button>PHP</button>
-                                    <button>HTML</button>
-                                    <button>Dev0ps</button>
-                                    <button>Bootstrap</button>
-                                    <button>SQL</button>
-                                    <button>WordPress</button>
-                                    <button>SEO</button>
-                                    <button>Webpack</button>
-                                    <button>Linux</button>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <strong>Site administrator @ AutoTokyo</strong>
-                            </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p>
-                                    HTML/CSS/JS layout, Python created a&nbsp;telegram bot for sales + parsing information about competitors, WordPress, 1C-Bitix, SEO. Technical support + Working with clients, processing applications, communicating in&nbsp;instant messengers, presentations, closing deals, CRM, expanding the client base. SMM&nbsp;promotion, Administration of&nbsp;social networks: Telegram, YouTube, VK, Zen. Site administration. Advertising and promotion.
-                                </p>
-                                <button>JavaScript</button>
-                                <button>Python</button>
-                                <button>HTML</button>
-                                <button>WordPress</button>
-                                <button>SEO</button>
-                                <button>Soft skills</button>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <strong>Computer repairman @ SV-service</strong>
-                            </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p>
-                                    Visiting the client, installing&nbsp;OS, software, setting up&nbsp;equipment, repairing equipment: smartphones, PCs, laptops, TVs. Cleaning, simple soldering, diagnostics.
-                                </p>
-                                <button>Soft skills</button>
-                                <button>Communication and sales skills</button>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                </div>
-            </section>
-
-            <section class="container contact__section d-flex flex-column">
-                <h5 class="text-center contact__title">Offers?</h5>
-                <p class="text-center contact__descr">Although I&rsquo;m not currently looking for new opportunities, my&nbsp;email is&nbsp;always open. Whether you have a&nbsp;question or&nbsp;just want to&nbsp;say&nbsp;hi, I&nbsp;will try to&nbsp;answer you as&nbsp;soon as&nbsp;possible!</p>
-                <a class="contact__email" href="mailto:enjoyhillol@gmail.com">
-                    <span id="contact"></span>
-                </a>
-            </section>
-        </main>
-    
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
-                <div class="footer__wrapper col-md-4 d-flex align-items-center mx-auto">
-                    <span class="mb-3 mb-md-0 text-muted footer__text text-center">&copy; 2024 Designed in Figma, code written in Visual Studio Code. Created using JS, HTML, CSS, Bootstrap. Compiled in Webpack.</span>
-                </div>
-    
-                <div class="footer__contacts">
-                    <ul class="footer__nav d-flex flex-column">
-                        <li class="ms-3">
-                            <a class="text-muted"target="_blank" href="https://t.me/Anri_khv">
-                                <img decoding="async" class="svg" src="./img/social/telegram.svg" alt="telegram_social_icon">
-                            </a>
-                        </li>
-                        <li class="ms-3">
-                            <a class="text-muted"target="_blank" href="https://wa.me/79098763797">
-                                <img decoding="async" src="./img/social/whatsapp.svg" alt="whatsapp_social_icon">
-                            </a>
-                        </li>
-                        <li class="ms-3">
-                            <a class="text-muted" href="tel:+79098763797">
-                                <img decoding="async" src="./img/social/phone-fill.svg" alt="phone_social_icon">
-                            </a>
-                        </li>
-                        <li class="ms-3">
-                            <a class="text-muted" target="_blank" href="https://github.com/Father1993">
-                                <img decoding="async" src="./img/social/github.svg" alt="github_social_icon">
-                            </a>
-                        </li>
-                        <li class="ms-3">
-                            <a class="text-muted" target="_blank" href="https://www.linkedin.com/in/andrey-spiney/">
-                                <img decoding="async" src="./img/social/linkedin.svg" alt="linkedin_social_icon">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <div class="footer__email d-flex">
-                    <a class="footer__link" href="mailto:enjoyhillol@gmail.com">
-                        <p class="email__mail">enjoyhillol@gmail.com</p>
+                <section
+                    class="container contact__section d-flex flex-column scroll-animation-left"
+                >
+                    <h5 class="text-center contact__title">Suggestions?</h5>
+                    <p class="text-center contact__descr">
+                        Although I'm not looking for new opportunities at the
+                        moment, my mail is always open.If you have a question or
+                        just want to say hello, I will try to answer you as soon
+                        as possible!
+                    </p>
+                    <a
+                        class="contact__email"
+                        href="mailto:enjoyhillol@gmail.com"
+                    >
+                        <span id="contact"></span>
                     </a>
-                </div>
-            </footer>
+                </section>
+            </main>
+
+            <div class="container">
+                <footer
+                    class="footer__block d-flex flex-wrap justify-content-between align-items-center py-3 my-4"
+                >
+                    <div class="footer__contacts-lg">
+                        <ul class="footer__nav-lg d-flex">
+                            <li class="ms-3">
+                                <a
+                                    class="text-muted"
+                                    target="_blank"
+                                    href="https://t.me/Anri_khv"
+                                >
+                                    <img
+                                        decoding="async"
+                                        class="footer__links-hover-md"
+                                        src="./img/social/telegram.svg"
+                                        alt="telegram_social_icon"
+                                    />
+                                </a>
+                            </li>
+                            <li class="ms-3">
+                                <a
+                                    class="text-muted"
+                                    target="_blank"
+                                    href="https://wa.me/79098763797"
+                                >
+                                    <img
+                                        class="footer__links-hover-md"
+                                        decoding="async"
+                                        src="./img/social/whatsapp.svg"
+                                        alt="whatsapp_social_icon"
+                                    />
+                                </a>
+                            </li>
+                            <li class="ms-3">
+                                <a
+                                    class="text-muted"
+                                    target="_blank"
+                                    href="https://github.com/Father1993"
+                                >
+                                    <img
+                                        class="footer__links-hover-md"
+                                        decoding="async"
+                                        src="./img/social/github.svg"
+                                        alt="github_social_icon"
+                                    />
+                                </a>
+                            </li>
+                            <li class="ms-3">
+                                <a
+                                    class="text-muted"
+                                    target="_blank"
+                                    href="https://www.linkedin.com/in/andrey-spiney/"
+                                >
+                                    <img
+                                        class="footer__links-hover-md"
+                                        decoding="async"
+                                        src="./img/social/linkedin.svg"
+                                        alt="linkedin_social_icon"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="footer__wrapper col-md-4 d-flex align-items-center mx-auto scroll-animation-right"
+                    >
+                        <span
+                            class="mb-3 mb-md-0 text-muted footer__text text-center"
+                            >&copy; 2024 The design is designed in Figma, the
+                            code is written in Visual Studio Code.Created using
+                            JS, HTML, CSS, Bootstrap. Collected in Webpack and
+                            Gulp.</span
+                        >
+                    </div>
+
+                    <div class="footer__contacts">
+                        <ul class="footer__nav d-flex flex-column">
+                            <li class="ms-3">
+                                <a
+                                    class="text-muted"
+                                    target="_blank"
+                                    href="https://t.me/Anri_khv"
+                                >
+                                    <img
+                                        decoding="async"
+                                        class="footer__links-hover"
+                                        src="./img/social/telegram.svg"
+                                        alt="telegram_social_icon"
+                                    />
+                                </a>
+                            </li>
+                            <li class="ms-3">
+                                <a
+                                    class="text-muted"
+                                    target="_blank"
+                                    href="https://wa.me/79098763797"
+                                >
+                                    <img
+                                        class="footer__links-hover"
+                                        decoding="async"
+                                        src="./img/social/whatsapp.svg"
+                                        alt="whatsapp_social_icon"
+                                    />
+                                </a>
+                            </li>
+                            <li class="ms-3">
+                                <a
+                                    class="text-muted"
+                                    target="_blank"
+                                    href="https://github.com/Father1993"
+                                >
+                                    <img
+                                        class="footer__links-hover"
+                                        decoding="async"
+                                        src="./img/social/github.svg"
+                                        alt="github_social_icon"
+                                    />
+                                </a>
+                            </li>
+                            <li class="ms-3">
+                                <a
+                                    class="text-muted"
+                                    target="_blank"
+                                    href="https://www.linkedin.com/in/andrey-spiney/"
+                                >
+                                    <img
+                                        class="footer__links-hover"
+                                        decoding="async"
+                                        src="./img/social/linkedin.svg"
+                                        alt="linkedin_social_icon"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__email d-flex">
+                        <a
+                            class="footer__link"
+                            href="mailto:enjoyhillol@gmail.com"
+                        >
+                            <p class="email__mail">enjoyhillol@gmail.com</p>
+                        </a>
+                    </div>
+                </footer>
+            </div>
         </div>
-    </div>
-    <script src="./js/main_en.js"></script>
-</body>
+        <script src="./js/main_en.js"></script>
+    </body>
 </html>

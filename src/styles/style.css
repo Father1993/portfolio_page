@@ -2,7 +2,31 @@ body {
     background-color: #272727;
     color: #d5d5d5;
     font-family: 'TeXGyreCursor', Courier, monospace;
+    overflow-x: hidden;
 }
+
+/* scrollbar  */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #00c26a #222222;
+}
+
+/* Chrome, Edge и Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #222222;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #00c26a;
+    border-radius: 20px;
+    border: 3px solid #222222;
+}
+
 h1,
 h2,
 h3,
@@ -21,9 +45,51 @@ a {
 *:focus {
     border: none;
     outline: 2px solid #64ff7e;
-    -webkit-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
-    -moz-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
     box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
+}
+
+/* Анимация загрузки элементов при скроле */
+.scroll-animation-left {
+    opacity: 0;
+    transform: translateX(-5%);
+    transition: opacity 1s, transform 1s;
+}
+
+.scroll-animation-left.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-animation-right {
+    opacity: 0;
+    transform: translateX(+5%);
+    transition: opacity 1s, transform 1s;
+}
+
+.scroll-animation-right.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Скрытые карточки проектов */
+.d-none {
+    display: none !important;
+}
+
+/* Анимация появления  */
+@keyframes fadeInAni {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-animation {
+    animation: fadeInAni 1.7s;
 }
 
 .header__btn {
@@ -33,17 +99,28 @@ a {
     text-decoration: none;
     color: #d5d5d5;
 }
+
 .rus {
     margin-right: -7px;
 }
 
 .header__btn:hover {
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 .header-b {
-    background-image: url('../img/assets/background.png');
+    background-image: url('../img/assets/a_background.webp');
     background-repeat: no-repeat;
+    background-position: top;
+}
+
+.header__logo {
+    width: 200px;
+    margin-right: 30px;
+}
+
+.header__logo-orange {
+    display: none;
 }
 
 .header {
@@ -69,6 +146,11 @@ a {
 .header__nav-link:hover {
     color: #ffc107 !important;
 }
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
 .header__nav-link:hover:before {
     content: '/';
@@ -81,8 +163,7 @@ a {
 }
 
 .padding__container {
-    margin-top: 130px;
-    padding: 0 150px 0 150px;
+    margin-top: 170px;
 }
 
 .hero__container {
@@ -103,6 +184,10 @@ a {
     color: #ffc107;
 }
 
+.typing-text {
+    height: 50px;
+}
+
 .hero__about {
     font-size: 26px;
     width: 670px;
@@ -111,6 +196,10 @@ a {
 
 .about {
     margin-top: 400px;
+}
+
+.about__title {
+    height: 850px;
 }
 
 .about__skills {
@@ -164,7 +253,12 @@ a {
 }
 
 .about__container {
-    height: 530px;
+    display: flex;
+}
+
+.about__block {
+    width: 45%;
+    margin-right: 70px;
 }
 
 .about__us::before {
@@ -182,10 +276,6 @@ a {
     width: 290px;
     height: 1px;
     background-color: #64ff7e;
-}
-
-.about {
-    margin-bottom: 300px;
 }
 
 .skills__title::before {
@@ -241,6 +331,33 @@ a {
     margin: 0;
 }
 
+.jobs__card {
+    margin-top: 50px;
+}
+
+.special-text {
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.card__wrapper {
+    height: 250px;
+}
+
+.show-more-btn {
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #64ff7e;
+    border-radius: 15px;
+    background-color: transparent;
+    font-family: 'TeXGyreCursor', Courier, monospace;
+    color: whitesmoke;
+    margin-bottom: 130px;
+}
+
+.top-card {
+    height: 150px !important;
+}
+
 .footer__wrapper {
     margin-top: 50px;
     border-top: 1px #d5d5d5 solid;
@@ -265,7 +382,32 @@ a {
 }
 
 .footer__nav li:not(:first-child) {
-    margin-top: 20px;
+    margin-top: 35px;
+}
+
+.footer__links-hover:hover {
+    background: #00c26a;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+.footer__links-hover-last:hover {
+    background: #00c26a;
+    transition: transform 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+
+.footer__links-hover-md:hover {
+    background: #00c26a;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+
+.footer__links-hover-md-last:hover {
+    background: #00c26a;
+    transition: transform 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
 }
 
 .footer__nav::after {
@@ -276,7 +418,7 @@ a {
     bottom: 0;
     width: 230px;
     height: 1px;
-    rotate: 90deg;
+    transform: rotate(90deg);
     background-color: #d5d5d5;
 }
 
@@ -293,13 +435,17 @@ a {
     letter-spacing: 3px;
 }
 
+.footer__email a:hover {
+    color: #64ff7e;
+}
+
 .email__mail {
     margin-top: 15px;
     text-decoration: none;
 }
 
 .footer__email::after {
-    rotate: 90deg;
+    transform: rotate(90deg);
     content: '';
     display: block;
     position: fixed;
@@ -319,6 +465,9 @@ a {
     width: 270px;
     height: 1px;
     background-color: #64ff7e;
+}
+.contact__section {
+    margin-bottom: 130px;
 }
 
 .work__title::after {
@@ -342,20 +491,60 @@ a {
     color: black;
 }
 
-.card-body {
-    height: 430px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0;
+.project__link-code:hover,
+.project__link-preview:hover {
+    color: #64ff7e;
+}
+
+.card-link:hover::before {
+    background-color: #00c26a;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    transition: background, border-radius 0.3s ease-in-out;
 }
 
 .project__img {
     width: 100%;
     border-radius: 15px;
-    height: 200px;
+    height: 300px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
+}
+
+.card-body {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 0.1px solid rgba(138, 138, 138, 0.5);
+}
+
+.project-first-line {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+.project-second-line {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+.project-third-line {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+.project-fourth-line {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 50px;
 }
 
 .jobs__card {
@@ -365,7 +554,7 @@ a {
 }
 
 .jobs__content {
-    margin-bottom: 77px;
+    margin-bottom: 70px;
 }
 
 .card__wrapper {
@@ -421,7 +610,7 @@ a {
 }
 
 .footer__link {
-    rotate: 90deg;
+    transform: rotate(90deg);
 }
 
 .fade-in {
@@ -525,8 +714,6 @@ a {
 .accordion-button:focus {
     border: none;
     outline: 2px solid #64ff7e;
-    -webkit-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
-    -moz-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
     box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
     background: transparent;
 }
@@ -544,8 +731,6 @@ a {
 .btn:focus {
     border: none;
     outline: 2px solid #64ff7e;
-    -webkit-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
-    -moz-box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
     box-shadow: -2px -1px 54px 30px rgba(100, 255, 126, 0.3);
 }
 
@@ -554,4 +739,469 @@ a {
 }
 .accordion-button:not(.collapsed)::after {
     background-image: url(../img/assets/caret.svg);
+}
+
+.footer__block {
+    display: flex;
+    flex-direction: column;
+}
+.footer__nav-lg li {
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 70px;
+}
+.footer__nav-lg {
+    margin: 0;
+    padding: 0;
+}
+.footer__wrapper {
+    margin-top: 20px;
+}
+
+.footer__contacts-lg {
+    display: none;
+}
+
+/* Медиа запросы под популярные разрешения */
+@media only screen and (max-width: 1630px) {
+    .container {
+        width: 950px;
+    }
+
+    .card__wrapper {
+        height: 350px;
+    }
+    .header {
+        flex-wrap: nowrap !important;
+    }
+    .header__nav-link {
+        font-size: 17px !important;
+    }
+
+    .spec-links {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1399px) {
+    .hero__descr,
+    .hero__name {
+        font-size: 26px;
+    }
+    .footer__contacts-lg {
+        display: flex;
+    }
+    .footer__contacts,
+    .footer__link {
+        display: none;
+    }
+    .footer__nav::after {
+        display: none;
+    }
+    .footer__email::after {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .wrapper-margin {
+        margin-bottom: 100px !important;
+    }
+    .hero__descr,
+    .hero__name {
+        font-size: 20px;
+    }
+    .hero__about {
+        font-size: 20px;
+    }
+    .about__title {
+        height: 1300px;
+    }
+    .about__container {
+        flex-direction: column-reverse;
+    }
+    .about__photo {
+        height: 500px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .about__block {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        width: 858px;
+    }
+    .about__block p {
+        font-size: 24px;
+    }
+    .about__list {
+        font-size: 1.3rem;
+    }
+    .skills__list li {
+        font-size: 18px;
+    }
+    .skills__description {
+        margin-bottom: 50px;
+    }
+    .padding__container {
+        margin-bottom: 350px;
+    }
+
+    .about__skills-wrapper {
+        margin-top: 50px;
+    }
+    .about {
+        margin-top: 230px;
+    }
+    .about__skills {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .header__logo {
+        display: none;
+    }
+    .header__logo-orange {
+        display: block;
+    }
+
+    .special-text {
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    .header__lang-wrapper {
+        margin-bottom: 17px;
+    }
+
+    .header {
+        flex-direction: column;
+        flex-wrap: wrap !important;
+    }
+    .header__logo {
+        width: 170px;
+    }
+    .footer__contacts-lg {
+        display: flex;
+    }
+    .about__block {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        width: 650px;
+    }
+    .skills {
+        margin-top: 450px;
+    }
+    .project__img,
+    .card-body {
+        height: auto;
+    }
+    .card-text {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .project__link {
+        margin-top: 19px;
+        margin-bottom: 19px;
+    }
+    .skills__title {
+        margin-top: 170px;
+    }
+    .padding__container {
+        margin-bottom: 0px;
+    }
+
+    .spec-links {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    .hero__about {
+        width: 590px;
+    }
+    .header {
+        padding: 10px 0 10px 0;
+        justify-content: space-around;
+    }
+    .header__nav-link {
+        font-size: 15px;
+    }
+    .header__logo {
+        width: 150px;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+    .header__button-wrapper {
+        width: 100px;
+    }
+    .jobs__card {
+        margin-bottom: 70px;
+    }
+    .skills__list {
+        width: 490px;
+    }
+    .about {
+        margin-top: 270px;
+        margin-bottom: 170px;
+    }
+    .footer__contacts,
+    .footer__link {
+        display: none;
+    }
+    .footer__nav::after {
+        display: none;
+    }
+    .footer__email::after {
+        display: none;
+    }
+    .footer__wrapper {
+        width: 80%;
+    }
+    .project-first-line {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-second-line {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-third-line {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-fourth-line {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-body {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header__nav-link {
+        font-size: 15px !important;
+    }
+    .about__block {
+        width: 100%;
+    }
+    .header__button-wrapper {
+        text-align: center;
+    }
+    .header__logo {
+        margin-left: 30px;
+    }
+    .header__nav-link {
+        font-size: 14px;
+    }
+    .skills__list {
+        width: 500px;
+    }
+    .hero__about {
+        width: 550px;
+    }
+    .block__info p {
+        font-size: 20px;
+    }
+    .about {
+        margin-top: 170px;
+    }
+    .jobs__card {
+        margin-bottom: 70px;
+    }
+    .footer__contacts {
+        display: none;
+    }
+    .footer__nav::after {
+        display: none;
+    }
+    .footer__link {
+        display: none;
+    }
+    .footer__email::after {
+        display: none;
+    }
+    .footer__wrapper {
+        width: 80%;
+    }
+    .contact__descr {
+        width: 100%;
+    }
+    .padding__container {
+        margin-top: 230px;
+        margin-bottom: 0;
+    }
+    .about__list {
+        font-size: 0.8rem;
+    }
+    .special-text {
+        font-size: 18px;
+    }
+    .project-first-line {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-second-line {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-third-line {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-fourth-line {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+
+    .card-link + .card-link {
+        margin-left: 0;
+    }
+
+    .work {
+        overflow: hidden;
+    }
+
+    .skills {
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .about__block p {
+        font-size: 16px;
+    }
+    .container {
+        width: 100%;
+    }
+    .hero__about {
+        width: 370px;
+    }
+    .skills__list {
+        width: 327px;
+    }
+    .about__us {
+        text-align: center;
+    }
+    .skills {
+        margin-top: 200px;
+    }
+    .about__us::after,
+    .skills__title::after,
+    .jobs__title::after,
+    .work__title::after {
+        display: none;
+    }
+    .skills__title,
+    .skills__description,
+    .jobs__title,
+    .work__title,
+    .work__desc {
+        text-align: center;
+    }
+    .hero__title,
+    .hero__name,
+    .hero__about {
+        text-align: center;
+    }
+    .hero__about {
+        width: 100%;
+    }
+    .hero__descr {
+        height: 30px;
+        display: block;
+        text-align: center;
+    }
+    .typed-cursor {
+        display: none;
+    }
+
+    .wrapper-margin {
+        margin-top: 170px;
+    }
+
+    .skills__list {
+        width: auto;
+        padding: 0 20px 0 20px;
+    }
+    .padding__container {
+        margin-top: 155px;
+    }
+
+    .skills__title {
+        margin-top: 0px;
+    }
+    .about__skills-wrapper {
+        margin-top: 70px;
+    }
+
+    .special-text {
+        font-size: 16px;
+    }
+    .spec-links {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .about__photo::after {
+        content: '';
+        position: relative;
+        display: block;
+        bottom: 389px;
+        left: 7px;
+        width: 340px;
+        height: 406px;
+    }
+    .photo__card {
+        width: 320px;
+    }
+    .special-text {
+        font-size: 13.5px;
+    }
+    .spec-links {
+        font-size: 12px;
+    }
+    .jobs__card {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .wrapper-margin {
+        margin-top: 120px;
+    }
+    .skills {
+        margin-top: 330px;
+    }
+    .header__nav-link {
+        font-size: 20px !important;
+    }
+    .skills__icon {
+        width: 64px;
+    }
+
+    .skills__list li {
+        font-size: 12px;
+    }
 }

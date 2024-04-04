@@ -8,7 +8,13 @@ gulp.task(
     'default',
     gulp.series(
         'clean:dev',
-        gulp.parallel('html:dev', 'images:dev', 'fonts:dev', 'js:dev'),
+        gulp.parallel(
+            'html:dev',
+            'css:dev',
+            'images:dev',
+            'fonts:dev',
+            'js:dev'
+        ),
         gulp.parallel('server:dev', 'watch:dev')
     )
 );
@@ -18,7 +24,13 @@ gulp.task(
     'docs',
     gulp.series(
         'clean:docs',
-        gulp.parallel('html:docs', 'images:docs', 'fonts:docs', 'js:docs'),
+        gulp.parallel(
+            'html:docs',
+            'css:docs',
+            'images:docs',
+            'fonts:docs',
+            'js:docs'
+        ),
         gulp.parallel('server:docs')
     )
 );

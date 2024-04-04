@@ -1,6 +1,9 @@
 const gulp = require('gulp');
 const fileInclude = require('gulp-file-include');
 const fs = require('fs');
+const server = require('gulp-server-livereload');
+const plumber = require('gulp-plumber');
+const notify = require('gulp-notify');
 
 // HTML
 const htmlclean = require('gulp-htmlclean');
@@ -82,7 +85,7 @@ gulp.task('css:docs', () => {
             // .pipe(sass())
             .pipe(csso())
             // .pipe(sourceMaps.write())
-            .pipe(rename({ suffix: '.min' }))
+            //.pipe(rename({ suffix: '.min' }))
             .pipe(gulp.dest('./docs/styles/'))
     );
 });
@@ -94,7 +97,6 @@ gulp.task('images:docs', () => {
         .pipe(changed('./docs/img/'))
         .pipe(webp())
         .pipe(gulp.dest('./docs/img/'))
-
         .pipe(gulp.src('./docs/**/*'))
         .pipe(changed('./docs/img/'))
         .pipe(imagemin({ verbose: true }))
@@ -105,14 +107,14 @@ gulp.task('images:docs', () => {
 gulp.task('fonts:docs', () => {
     return gulp
         .src('./src/styles/fonts/**/*')
-        .pipe(changed('./docs/fonts/'))
-        .pipe(gulp.dest('./docs/fonts/'));
+        .pipe(changed('./docs/styles/fonts/'))
+        .pipe(gulp.dest('./docs/styles/fonts/'));
 });
 
 //
 gulp.task('js:docs', () => {
     return gulp
-        .src('./src/js/*.js')
+        .src('./src/js/**/*.js')
         .pipe(changed('./docs/js/'))
         .pipe(plumber(plumberNotify('JS')))
         .pipe(babel())

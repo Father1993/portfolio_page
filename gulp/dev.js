@@ -1,16 +1,25 @@
 const gulp = require('gulp');
 const fileInclude = require('gulp-file-include');
-const sass = require('sass');
-const server = require('gulp-server-livereload');
 const clean = require('gulp-clean');
 const fs = require('fs');
+const changed = require('gulp-changed');
+const server = require('gulp-server-livereload');
+
+// Css, Sass, Scss
+const sourceMaps = require('gulp-sourcemaps');
 const groupMedia = require('gulp-group-css-media-queries');
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
+const sass = require('sass');
+const webpCss = require('gulp-webp-css');
+
+// Images
+const imagemin = require('gulp-imagemin');
+const webp = require('gulp-webp');
+
+// JS
 const webpack = require('webpack-stream');
 const babel = require('gulp-babel');
-const imagemin = require('gulp-imagemin');
-const changed = require('gulp-changed');
 
 // Префиксы для подключения шаблонов
 const fileIncludeSettings = {
@@ -58,28 +67,32 @@ gulp.task('css:dev', () => {
     return (
         gulp
             .src('./src/styles/**/*.css')
-            .pipe(changed('./docs/styles/'))
+            .pipe(changed('./build/styles/'))
             .pipe(plumber(plumberNotify('css')))
             .pipe(sourceMaps.init())
-            .pipe(cssmin())
-            .pipe(autoprefixer())
+            // .pipe(cssmin())
+            // .pipe(autoprefixer())
             .pipe(webpCss())
-            .pipe(groupMedia())
+            // .pipe(groupMedia())
             // .pipe(sass())
+            // .pipe(csso())
             .pipe(sourceMaps.write())
-            .pipe(gulp.dest('./docs/styles/'))
+            //.pipe(rename({ suffix: '.min' }))
+            .pipe(gulp.dest('./build/styles/'))
     );
 });
 
 // Копирование изображений
 gulp.task('images:dev', () => {
-    return (
-        gulp
-            .src('./src/img/**/*')
-            .pipe(changed('./build/img/'))
-            // .pipe(imagemin({ verbose: true }))
-            .pipe(gulp.dest('./build/img/'))
-    );
+    return gulp
+        .src('./src/img/**/*')
+        .pipe(changed('./build/img/'))
+        .pipe(webp())
+        .pipe(gulp.dest('./build/img/'))
+        .pipe(gulp.src('./build/**/*'))
+        .pipe(changed('./build/img/'))
+        .pipe(imagemin({ verbose: true }))
+        .pipe(gulp.dest('./build/img/'));
 });
 
 // Копирование шрифтов
@@ -94,7 +107,7 @@ gulp.task('fonts:dev', () => {
 gulp.task('js:dev', () => {
     return (
         gulp
-            .src('./src/js/*.js')
+            .src('./src/js/**/*.js')
             .pipe(changed('./build/js/'))
             .pipe(plumber(plumberNotify('JS')))
             // .pipe(babel())
@@ -110,7 +123,7 @@ gulp.task('server:dev', () => {
 
 // Следит за изменениями в dev файлах
 gulp.task('watch:dev', () => {
-    gulp.watch('./src/scss/**/*.scss', gulp.parallel('css:dev'));
+    gulp.watch('./src/styles/**/*.css', gulp.parallel('css:dev'));
     gulp.watch('./src/**/*.html', gulp.parallel('html:dev'));
     gulp.watch('./src/img/**/*', gulp.parallel('images:dev'));
     gulp.watch('./src/styles/fonts/**/*', gulp.parallel('fonts:dev'));
