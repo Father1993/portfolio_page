@@ -491,14 +491,6 @@ a {
     color: black;
 }
 
-.card-body {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0;
-}
-
 .project__link-code:hover,
 .project__link-preview:hover {
     color: #64ff7e;
@@ -514,9 +506,45 @@ a {
 .project__img {
     width: 100%;
     border-radius: 15px;
-    height: 100%;
+    height: 300px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
+}
+
+.card-body {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 0.1px solid rgba(138, 138, 138, 0.5);
+}
+
+.project-first-line {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+.project-second-line {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+.project-third-line {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+.project-fourth-line {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 50px;
 }
 
 .jobs__card {
@@ -932,9 +960,32 @@ a {
     .footer__wrapper {
         width: 80%;
     }
+    .project-first-line {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-    .last-card {
-        height: 230px;
+    .project-second-line {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-third-line {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-fourth-line {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-body {
+        width: 600px;
     }
 }
 
@@ -994,9 +1045,47 @@ a {
     .about__list {
         font-size: 0.8rem;
     }
-
     .special-text {
         font-size: 18px;
+    }
+    .project-first-line {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-second-line {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-third-line {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-fourth-line {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+
+    .card-link + .card-link {
+        margin-left: 0;
+    }
+
+    .work {
+        overflow: hidden;
+    }
+
+    .skills {
+        overflow: hidden;
     }
 }
 
@@ -1090,7 +1179,7 @@ a {
         width: 320px;
     }
     .special-text {
-        font-size: 14px;
+        font-size: 13.5px;
     }
     .spec-links {
         font-size: 12px;
